@@ -1,0 +1,62 @@
+.paging{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 700px;
+    width: 500px;
+    height: 50px;
+  }
+  .previous-page{
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #33CCFF;
+  }
+  .next-page{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #33CCFF;
+  }
+  .pages{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .pages-information{
+    flex:1;
+    position: relative;
+  }
+  .select{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #33CCFF;
+    background-color: #33CCFF;
+  }
+  .un-select{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #33CCFF;
+    background-color: #fff;
+  }
