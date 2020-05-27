@@ -3,10 +3,10 @@ import './index.css'
 
 class Content extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             show: false  // 弹窗出现和消失
-        }
+        };
     }
 
     /**
@@ -16,9 +16,9 @@ class Content extends Component {
      * @param {*} id
      */
     handleClick = (id) => {
-        const { showWindow, sendId } = this.props
-        showWindow(true)
-        sendId(id)
+        const { showWindow, sendId } = this.props;
+        showWindow(true);
+        sendId(id);
     }
 
     render() {

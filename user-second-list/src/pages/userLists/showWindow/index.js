@@ -3,10 +3,10 @@ import './index.css'
 
 class ShowWindow extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             age: "" // 输入框里更改的年龄值
-        }
+        };
     }
 
     /**
@@ -18,8 +18,8 @@ class ShowWindow extends Component {
     handleChangeAge = (event) => {
         this.setState({
             age: event.target.value
-        })
-        console.log(event.target.value)
+        });
+        console.log(event.target.value);
     }
 
     /**
@@ -29,10 +29,10 @@ class ShowWindow extends Component {
      * @param {*} age 更改的年龄
      */
     clickChangeAge = (age) => {
-        const { changeAge, showWindow } = this.props
-        changeAge(age)
-        showWindow(false)
-    }
+        const { changeAge, showWindow } = this.props;
+        changeAge(age);
+        showWindow(false);
+    };
 
     render() {
         const { showWindow } = this.props
@@ -56,6 +56,6 @@ class ShowWindow extends Component {
             </div>
         )
     }
-}
+};
 
 export default ShowWindow

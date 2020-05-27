@@ -3,10 +3,10 @@ import './index.css'
 
 class Paging extends Component {
 	constructor(props) {
-		super(props)
-		this.state = {
+        super(props);
+        this.state = {
             current: "", //当前页
-		}
+        };
     }
     
     /**
@@ -17,11 +17,11 @@ class Paging extends Component {
      * @param {*} currentPages 点击的页数
      */
     handleClick = (searchName, currentPages) => { 
-        const { toPageLists } = this.props
-        toPageLists(searchName, currentPages)
+        const { toPageLists } = this.props;
+        toPageLists(searchName, currentPages);
         this.setState({
             current: currentPages
-        })
+        });
     }
     
     /**
@@ -32,19 +32,19 @@ class Paging extends Component {
      * @param {*} currentPages 点击的页数
      */
     HandlePages = (searchName, currentPages) => {
-        const { toPageLists, allPages } = this.props
-        let addPages 
+        const { toPageLists, allPages } = this.props;
+        let addPages;
         if (currentPages <= 1) {
-            addPages = 1
+            addPages = 1;
         } else if(currentPages >= allPages) {
-            addPages = allPages
+            addPages = allPages;
         } else {
-            addPages = currentPages
-        }
+            addPages = currentPages;
+        };
         this.setState({
             current: addPages
-        })
-        toPageLists(searchName, addPages)
+        });
+        toPageLists(searchName, addPages);
     }
 
     render() {

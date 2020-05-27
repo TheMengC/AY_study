@@ -6,7 +6,7 @@ class Search extends Component {
         super(props);
         this.state = {
             value: ""
-        }
+        };
     };
 
     /**
@@ -19,10 +19,10 @@ class Search extends Component {
         const { toPageLists } = this.props;
         this.setState({
             value: event.target.value
-        })
+        });
         if (event.target.value == '') {
             toPageLists(" ", 1);
-        }
+        };
     };
 
     render() {

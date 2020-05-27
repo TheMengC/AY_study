@@ -10,7 +10,7 @@ import ShowWindow from './showWindow/index';
 
 class UserLists extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             userLists: [],  // 接口请求到总数组
             number: 10,    // 每页要展示的数组长度
@@ -22,7 +22,7 @@ class UserLists extends Component {
             show: false,     // 控制弹窗的出现和消失
             age: "",        // 更改的年龄
             id: ""          // 编辑那条数据的id
-        }
+        };
     }
     /**
      * @description 接口请求
@@ -39,7 +39,7 @@ class UserLists extends Component {
                     });
                     this.toPageLists("", 1);
                 }
-            })
+            });
     }
     
     /**
@@ -58,13 +58,13 @@ class UserLists extends Component {
             pageLists = lists.slice((currentPages - 1) * number, currentPages * number);
         } else {
             pageLists = lists.slice((currentPages - 1) * number);
-        }
+        };
         this.setState({
             pageLists: pageLists,
             pages: pages,
             currentPages: currentPages,
             allPages: page
-        })
+        });
     }
 
     /**
@@ -89,7 +89,7 @@ class UserLists extends Component {
             });
         } else {
             this.sliceLists(userLists, currentPages);
-        }
+        };
     }
 
     /**
@@ -114,7 +114,7 @@ class UserLists extends Component {
     sendId = (id) => {
         this.setState({
             id: id
-        })
+        });
     }
 
     /**
@@ -124,13 +124,13 @@ class UserLists extends Component {
      * @param {*} age 更改的年龄
      */
     changeAge = (age) => {
-        console.log(age)
+        // console.log(age);
         const { pageLists, id } = this.state;
         pageLists.map(item => {
             if (item.id == id) {
                 item.age = age
-            }
-        })
+            };
+        });
     }
 
     render() {
