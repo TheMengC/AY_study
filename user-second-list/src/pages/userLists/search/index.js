@@ -21,7 +21,7 @@ class Search extends Component {
             value: event.target.value
         });
         if (event.target.value == '') {
-            toPageLists(" ", 1);
+            toPageLists(event.target.value, 1);
         };
     };
 

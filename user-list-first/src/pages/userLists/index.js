@@ -15,7 +15,7 @@ class UserLists extends Component {
             userLists: [],
             totalPages: [],
             pageLists: [],
-            show:false,
+            show: false,
             pages: '',
             id: ''
         }
@@ -30,8 +30,8 @@ class UserLists extends Component {
         this.ChangeAge = this.ChangeAge.bind(this)
     }
 
-    componentDidMount () {
-        this.get ()
+    componentDidMount() {
+        this.get()
     }
 
     // 数据请求
@@ -42,7 +42,7 @@ class UserLists extends Component {
                 if (res.status == 200) {
                     let pages = Math.ceil(res.data.lists.length / 10)
                     let pageArr = []
-                    for(let i = 0 ; i < pages ; i ++) {
+                    for (let i = 0; i < pages; i++) {
                         pageArr.push(i)
                     }
                     let pageLists = res.data.lists.slice(0, 10)
@@ -57,7 +57,7 @@ class UserLists extends Component {
                     })
                     // console.log(this.state.pages)
                 };
-        })
+            })
     }
 
     // 将数组进行分页
@@ -68,32 +68,32 @@ class UserLists extends Component {
         } else {
             pageListsArr = lists.slice(pages * 10)
         }
-        this.setState({pageLists: pageListsArr})
+        this.setState({ pageLists: pageListsArr })
     }
 
     Show(data) {
-        this.setState({show: data})
+        this.setState({ show: data })
     }
 
     Unshow(data) {
-        this.setState({show: data})
+        this.setState({ show: data })
     }
 
     // 搜索查找
     SearchName(name) {
         let searchList = []
-        this.state.userLists.map( item => {
-            if(item.name.indexOf(name) > -1) {
+        this.state.userLists.map(item => {
+            if (item.name.indexOf(name) > -1) {
                 searchList.push(item)
             }
         })
         console.log(searchList)
         // this.setState({UserLists: searchList})
         // console.log(this.state.searchList)
-        if(searchList.length > 0) {
+        if (searchList.length > 0) {
             let page = Math.ceil(searchList.length / 10)
             let arr = []
-            for(let i = 0 ; i < page ; i ++) {
+            for (let i = 0; i < page; i++) {
                 arr.push(i)
             }
             let pageLists = searchList.slice(0, 10)
@@ -112,30 +112,30 @@ class UserLists extends Component {
             id: id
         })
     }
-    
+
     // 更改年龄
     ChangeAge(age) {
-        for(let i = 0; i < this.state.pageLists.length; i++) {
-            if(this.state.id == this.state.pageLists[i].id) {
+        for (let i = 0; i < this.state.pageLists.length; i++) {
+            if (this.state.id == this.state.pageLists[i].id) {
                 this.state.pageLists[i].age = age
             }
         }
-        
+
     }
 
     render() {
         return (
             <div className="user-lists">
                 <Header></Header>
-                <Search get={this.get} SearchName = {this.SearchName}></Search>
-                <Content sendId={this.sendId} userLists={this.state.userLists} totalPages={this.state.totalPages} pageLists={this.state.pageLists}  data={this.Show}></Content>
+                <Search get={this.get} SearchName={this.SearchName}></Search>
+                <Content sendId={this.sendId} userLists={this.state.userLists} totalPages={this.state.totalPages} pageLists={this.state.pageLists} data={this.Show}></Content>
                 <Paging pages={this.state.pages} totalPages={this.state.totalPages} AddPages={this.AddPages} handlePages={this.handlePages} userLists={this.state.userLists}></Paging>
                 {this.state.show ? <ShowWindow ChangeAge={this.ChangeAge} data={this.Unshow} /> : ""}
             </div>
-            
+
         )
     }
-    
+
 }
 
 export default UserLists;
