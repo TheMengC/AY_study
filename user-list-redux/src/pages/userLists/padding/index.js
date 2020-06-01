@@ -11,7 +11,7 @@ class Paging extends Component {
         const { currentPages, pages, userLists, number, changePageValue, searchName} = this.props
 		return (
 			<div className="paging">
-				<div className="previous-page" onClick={() => changePageValue(searchName,userLists, currentPages - 1, number)}>上一页</div>
+				<div className="previous-page" onClick={() => changePageValue(searchName, userLists, currentPages - 1, number)}>上一页</div>
 				<div className="pages">
 					{pages.map(item => {
 						return (
