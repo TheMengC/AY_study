@@ -8,21 +8,21 @@ import { changePagesLists } from 'store/actionCreators'
 class Paging extends Component {
 
     render() {
-        const { currentPages, pages, userLists, number, changePageValue} = this.props
+        const { currentPages, pages, userLists, number, changePageValue, searchName} = this.props
 		return (
 			<div className="paging">
-				<div className="previous-page" onClick={() => changePageValue(userLists, currentPages - 1, number)}>上一页</div>
+				<div className="previous-page" onClick={() => changePageValue(searchName,userLists, currentPages - 1, number)}>上一页</div>
 				<div className="pages">
 					{pages.map(item => {
 						return (
 							<div className="pages-information" key={item}>
-								<div className={(item) === currentPages ? 'select' : 'un-select'} onClick={() => changePageValue(userLists, item, number)}>{item}</div>
+								<div className={(item) === currentPages ? 'select' : 'un-select'} onClick={() => changePageValue(searchName,userLists, item, number)}>{item}</div>
 							</div>
 						)
 					})}
 				</div>
 
-				<div className="next-page" onClick={() => changePageValue(userLists, currentPages + 1, number)}>下一页</div>
+				<div className="next-page" onClick={() => changePageValue(searchName, userLists, currentPages + 1, number)}>下一页</div>
 			</div>
 		)
 	}
@@ -47,9 +47,9 @@ const mapDispatchToProps = (dispatch) => {
          * @param {*} item 当前要展示的页数
          * @param {*} number 每页要展示的数组数量
          */
-    changePageValue(userLists, item, number) {
-      console.log(userLists)
-      let {pageLists, currentPages} = toPageLists({ userLists: userLists, currentPages: item, number: number})
+    changePageValue(searchName, userLists, item, number) {
+      console.log(searchName)
+      let {pageLists, currentPages} = toPageLists({ userLists: userLists, currentPages: item, number: number, searchName:searchName})
       const action = changePagesLists(pageLists, currentPages)
       dispatch(action)
     }
