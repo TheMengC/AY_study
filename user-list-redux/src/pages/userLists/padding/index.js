@@ -8,7 +8,7 @@ import { changePagesLists } from 'store/actionCreators'
 class Paging extends Component {
 
     render() {
-        const { currentPages, pages, userLists, number, changePageValue } = this.props
+        const { currentPages, pages, userLists, number, changePageValue, searchName } = this.props
 		return (
 			<div className="paging">
 				<div className="previous-page" onClick={() => changePageValue(userLists, currentPages - 1, number)}>上一页</div>
@@ -32,7 +32,8 @@ const mapStateToProps = (state) => {
       currentPages: state.currentPages,
       pages: state.pages,
       userLists: state.userLists,
-      number: state.number
+      number: state.number,
+      searchName: state.searchName
   }
 }
 
@@ -47,7 +48,8 @@ const mapDispatchToProps = (dispatch) => {
          * @param {*} number 每页要展示的数组数量
          */
     changePageValue(userLists, item, number) {
-      let {pageLists, currentPages} = toPageLists({userLists: userLists, currentPages: item, number: number})
+      console.log(userLists)
+      let {pageLists, currentPages} = toPageLists({ userLists: userLists, currentPages: item, number: number})
       const action = changePagesLists(pageLists, currentPages)
       dispatch(action)
     }

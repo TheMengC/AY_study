@@ -46,7 +46,8 @@ function reducer (state = defaultState, action) {
                 type: CHANGE_PAGES_LISTS,
                 pageLists: action.pageLists,
                 pages: action.pages,
-                currentPages: action.currentPages
+                currentPages: action.currentPages,
+                userLists: action.userLists
             })
 
         case CHANGE_SHOW_VALUE:

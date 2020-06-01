@@ -25,8 +25,7 @@ const toPageLists = ({ userLists,currentPages, number, searchName }) => {
     } 
     let pageLists = lists.slice((currentPages - 1) * number, currentPages * number)
     let pages = new Array(page).fill('').map((item, index) => { return (index + 1) });
-    console.log(pages, pageLists, currentPages)
-    return {pages, pageLists, currentPages}
+    return {pages, pageLists, currentPages, lists}
 }
 
 export default toPageLists

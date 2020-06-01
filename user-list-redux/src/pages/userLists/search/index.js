@@ -21,7 +21,7 @@ const mapStateToProps = (state) => {
   return {
 	searchName: state.searchName,
 	number: state.number,
-	userLists: state.userLists
+	userLists: state.userLists,
   }
 }
 
@@ -47,9 +47,9 @@ const mapDispatchToProps = (dispatch) => {
 		 * @param {*} number 每页要展示的数组数量
 		 * @param {*} current 当前页数
 		 */
-		handleSearchList (userLists, searchName, current, number) {
-			const {pageLists, pages, currentPages} = toPageLists({userLists:userLists, searchName:searchName, currentPages:current, number:number})
-			const action = getSearchList(pageLists, pages, currentPages)
+		handleSearchList(userLists, searchName, current, number) {
+			const {pageLists, pages, currentPages, lists} = toPageLists({userLists:userLists, searchName:searchName, currentPages:current, number:number})
+			const action = getSearchList(pageLists, pages, currentPages, lists)
 			dispatch(action)
 		}
 	}
