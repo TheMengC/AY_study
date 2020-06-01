@@ -1,6 +1,7 @@
 import {CHANGE_SHOW_AGE, CHANGE_AGE_VALUE, INIT_USERLISTS_VALUE, GET_PAGELISTS_VALUE, CHANGE_PAGES_LISTS, SET_SEARCH_NAME, GET_SEARCH_LIST, CHANGE_SHOW_VALUE} from './actionTypes'
 const defaultState = {
     userLists: [],  //接口请求总数据
+    searchLists: [], // 搜索后的数组
     pageLists: [],  // 当前页展示的数组
     pages: [],  // 分页器的数组
     number: 10,  // 每页要展示的信息数量
@@ -46,8 +47,7 @@ function reducer (state = defaultState, action) {
                 type: CHANGE_PAGES_LISTS,
                 pageLists: action.pageLists,
                 pages: action.pages,
-                currentPages: action.currentPages,
-                userLists: action.userLists
+                currentPages: action.currentPages
             })
 
         case CHANGE_SHOW_VALUE:

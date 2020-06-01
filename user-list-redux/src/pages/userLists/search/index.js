@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './index.css';
 import {setSearchName, getSearchList} from 'store/actionCreators'
 import toPageLists from 'pages/userLists/toPageLists'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 class Search extends Component {
 	
+
     render() {
       const {searchNameValue, searchName, number, userLists, handleSearchList} = this.props
         return (
@@ -21,7 +22,7 @@ const mapStateToProps = (state) => {
   return {
 	searchName: state.searchName,
 	number: state.number,
-	userLists: state.userLists,
+	userLists: state.userLists
   }
 }
 
@@ -48,8 +49,8 @@ const mapDispatchToProps = (dispatch) => {
 		 * @param {*} current 当前页数
 		 */
 		handleSearchList(userLists, searchName, current, number) {
-			const {pageLists, pages, currentPages, lists} = toPageLists({userLists:userLists, searchName:searchName, currentPages:current, number:number})
-			const action = getSearchList(pageLists, pages, currentPages, lists)
+			const {pageLists, pages, currentPages} = toPageLists({userLists:userLists, searchName:searchName, currentPages:current, number:number})
+			const action = getSearchList(pageLists, pages, currentPages)
 			dispatch(action)
 		}
 	}

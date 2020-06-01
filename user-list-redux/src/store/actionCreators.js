@@ -40,12 +40,11 @@ export const setSearchName = (value) => ({
     value
 })
 
-export const getSearchList = (pageLists, pages, currentPages, userLists) => ({
+export const getSearchList = (pageLists, pages, currentPages) => ({
     type: GET_SEARCH_LIST,
     pageLists,
     pages,
-    currentPages,
-    userLists
+    currentPages
 })
 
 export const changeShowValue = (show, id, age) => ({

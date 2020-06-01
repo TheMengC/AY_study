@@ -16,6 +16,7 @@ const toPageLists = ({ userLists,currentPages, number, searchName }) => {
     })
     if (searchLists.length > 0) {
         lists = searchLists
+
     }
     let page = Math.ceil(lists.length / number)
     if(currentPages < 1) {
@@ -25,7 +26,7 @@ const toPageLists = ({ userLists,currentPages, number, searchName }) => {
     } 
     let pageLists = lists.slice((currentPages - 1) * number, currentPages * number)
     let pages = new Array(page).fill('').map((item, index) => { return (index + 1) });
-    return {pages, pageLists, currentPages, lists}
+    return {pages, pageLists, currentPages}
 }
 
 export default toPageLists

@@ -8,7 +8,7 @@ import { changePagesLists } from 'store/actionCreators'
 class Paging extends Component {
 
     render() {
-        const { currentPages, pages, userLists, number, changePageValue, searchName } = this.props
+        const { currentPages, pages, userLists, number, changePageValue} = this.props
 		return (
 			<div className="paging">
 				<div className="previous-page" onClick={() => changePageValue(userLists, currentPages - 1, number)}>上一页</div>
