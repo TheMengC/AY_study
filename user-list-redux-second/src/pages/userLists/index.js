@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header'
 import Content from './content'
-import Paging from './padding'
+import Paging from './paging'
 import Search from './search'
 import ShowWindow from './showWindow'
 import './index.css'
