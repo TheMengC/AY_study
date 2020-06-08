@@ -99,7 +99,7 @@ export const setValueThree = (e) => {
 * @param {*} one 第一个输入框的值
 * @param {*} two 第二个输入框的值
 * @param {*} three 第三个输入框的值
-* @param {*} todoLists 总数组
+* @param {*} todoLists 要展示的数组
 */
 export const handleThreeMsg = (one, two, three, todoLists, over) => {
     console.log(one, two, three)
@@ -127,6 +127,7 @@ export const handleThreeMsg = (one, two, three, todoLists, over) => {
 * @date 2020-05-26
 * @param {*} id 编辑的那条信息的id
 * @param {*} show 弹窗的出现和消失
+* @param {*} todoLists 要展示的数组
 */
 export const handleChangeItem = (id, show, todoLists) => {
     if (todoLists[id].over) {
