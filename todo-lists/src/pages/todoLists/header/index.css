@@ -1,0 +1,27 @@
+.header{
+    width: 100%;
+    height:120px;
+    text-align: center;
+    font-size: 28px;
+}
+.header-title{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+.router{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.router-link{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.router-link li{
+    display: inline-block;
+    margin-right: 50px;
+}
