@@ -116,7 +116,6 @@ export const handleThreeMsg = (one, two, three, todoLists, over) => {
         list = [...list, {title:three, over: over}];
         three = ""
     }
-    console.log(list)
     let arrList = [...todoLists, ...list]
     return {type: types.HANDLE_THREE_MSG, one, two, three, arrList}
 }
