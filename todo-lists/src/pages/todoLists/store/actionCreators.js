@@ -1,4 +1,5 @@
 import * as types from './actionTypes'
+import store from 'store/index'  // 引入store，就不需要再从方法里面传入store的值
 
 /**
 * @description 记录输入框输入的值
@@ -7,6 +8,8 @@ import * as types from './actionTypes'
 * @param {*} event
 */
 export const searchNameValue = (e) => {
+    const lists = store.getState().todoLists.todoLists
+    console.log(lists)
     let value = e.target.value
     return {type: types.SET_SEARCH_NAME,value}
 }
@@ -102,7 +105,6 @@ export const setValueThree = (e) => {
 * @param {*} todoLists 要展示的数组
 */
 export const handleThreeMsg = (one, two, three, todoLists, over) => {
-    console.log(one, two, three)
     let list = []
     if (one) {
         list = [...list, {title:one, over: over}]
@@ -162,7 +164,7 @@ export const setInputItem = (e) => {
 * @description 更改信息
 * @author SMC
 * @date 2020-05-26
-* @param {*} todeLists 展示的数组
+* @param {*} todoLists 展示的数组
 * @param {*} allLists 总数组
 * @param {*} items 更改的新信息
 * @param {*} id 编辑信息的id
@@ -178,7 +180,7 @@ export const handleSureItem = (todoLists, allLists,items, id, show) => {
 * @description 完成
 * @author SMC
 * @date 2020-05-26
-* @param {*} todeLists 展示的数组
+* @param {*} todoLists 展示的数组
 * @param {*} allLists 总数组
 * @param {*} over 是否完成
 * @param {*} index 编辑信息的id
@@ -195,7 +197,7 @@ export const handleClickOver = (over, index,todoLists, allLists) => {
 * @description 删除信息
 * @author SMC
 * @date 2020-05-26
-* @param {*} todeLists 展示的数组
+* @param {*} todoLists 展示的数组
 * @param {*} allLists 总数组
 * @param {*} index 编辑信息的id
 */
