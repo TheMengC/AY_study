@@ -136,7 +136,7 @@ export const handleChangeItem = (id, show, todoLists) => {
     } else {
         show = true
     }
-    return {type: types.HANDLE_CHANGE_ITEM, id, show}
+    return {type: types.HANDLE_CHANGE_ITEM, id, show}   
 }
 
 /**

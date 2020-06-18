@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch) => {
 		},
 
 		handleSearchList(userLists, searchName, current, number) {
-			dispatch(handleSearchList(userLists, searchName, current, number))
+			dispatch(handleSearchList(userLists, searchName, current, number))      
 		}
 	}
 }
