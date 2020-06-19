@@ -1,0 +1,30 @@
+.detect-conditions {
+    padding: 20px;
+    background: rgba(255,255,255,1);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+
+    .detect-switch {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .detect-switch-text {
+        width: 400px;
+    }
+
+    // switch 样式
+    .next-switch-medium {
+        width: 44px;
+        height: 22px;
+    }
+    .next-switch-medium:after {
+        width: 20px;
+        height: 20px;
+    }
+}

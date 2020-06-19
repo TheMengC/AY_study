@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-tabs": "../../public/mapp_common/components/myTab/index",
+    "refund-list": "../../components/refundManagement/refundList/index",
+    "my-pagination": "../../components/myPagination/index"
+  }
+}

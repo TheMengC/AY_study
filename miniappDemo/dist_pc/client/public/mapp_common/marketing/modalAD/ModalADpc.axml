@@ -1,0 +1,43 @@
+<template name="renderCloseBox">
+    <block>
+        <block>
+            <block a:if="{{countdown}}">
+                <view class="counting pcCloser">{{countdown}}秒后可关闭</view>
+            </block>
+            <block a:else>
+                <image src="" class="closer pcCloser" onTap="closeModal"></image>
+            </block>
+        </block>
+    </block>
+</template>
+<template name="renderButs">
+    <block>
+        <block a:if="{{anonymousState__temp7}}">
+            <view></view>
+        </block>
+        <block a:elif="{{!hotSpace}}">
+            <view></view>
+        </block>
+        <block a:for="{{loopArray4}}" a:for-item="item" a:for-index="__index0" a:else>
+            <block a:if="{{bodyData['hotspace' + item.$original]}}">
+                <view onTap="anonymousFunc0" style="{{item.$loopState__temp2}}" data-e-onTap-so="this" data-e-onTap-a-a="{{item._$indexKey}}"></view>
+            </block>
+            <block a:else></block>
+        </block>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block>
+        <block a:if="{{anonymousState__temp5}}">
+            <view class="modal-ad-wrapper">
+                <view class="modal-ad-main">
+                    <image src="{{adInfo.img_path}}" style="{{_$anonymousState__temp3}}" onTap="handleClickAD" onLoad="anonymousFunc1"></image>
+                    <template is="renderButs" data="{{..._$_$anonymousState__temp}}"></template>
+                    <view class="modal-ad-closer">
+                        <template is="renderCloseBox" data="{{..._$_$anonymousState__temp2}}"></template>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </block>
+</block>

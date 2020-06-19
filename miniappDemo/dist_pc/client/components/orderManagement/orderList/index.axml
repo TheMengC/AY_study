@@ -1,0 +1,10 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="refund-list">
+        <block a:if="{{list.length == 0 && !isLoading}}">
+            <view class="refund-empty">
+                <empty-page compid="{{$compid__38}}"></empty-page>
+            </view>
+        </block>
+        <order-card a:for="{{loopArray22}}" a:for-item="trade" a:for-index="_anonIdx2" compid="{{trade.$compid__37}}"></order-card>
+    </view>
+</block>

@@ -1,0 +1,23 @@
+<block a:if="{{$taroCompReady}}">
+    <block>
+        <block a:if="{{anonymousState__temp}}">
+            <at-modal compid="{{$compid__31}}">
+                <at-modal-header compid="{{$compid__32}}">
+                    <view class="header-title">{{_$anonymousState__temp2}}</view>
+                    <block a:if="{{!_$successType}}">
+                        <view class="closer" onTap="onClose">X</view>
+                    </block>
+                </at-modal-header>
+                <at-modal-content>
+                    <view class="text-row" a:for="{{_$content.content}}" a:for-item="item" a:for-index="_anonIdx2">{{item}}</view>
+                    <block a:if="{{contentType === 'paySuccess'}}">
+                        <image class="paySuccess-img" src="{{_$content.introImg}}"></image>
+                    </block>
+                </at-modal-content>
+                <at-modal-action>
+                    <button class="{{'' + item.$original.name}}" onTap="anonymousFunc0" a:for="{{loopArray17}}" a:for-item="item" a:for-index="__index0" data-e-onTap-so="this" data-e-onTap-a-a="{{item._$indexKey}}">{{_$content[item.$original.name]}}</button>
+                </at-modal-action>
+            </at-modal>
+        </block>
+    </block>
+</block>

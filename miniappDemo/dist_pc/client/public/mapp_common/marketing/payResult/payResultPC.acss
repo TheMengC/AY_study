@@ -1,0 +1,47 @@
+
+.pc-pay-result-wrapper .at-modal__container {
+  max-width: 352px; }
+
+.pc-pay-result-wrapper .at-modal__header {
+  padding: 20px 20px 12px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between; }
+  .pc-pay-result-wrapper .at-modal__header.payFail-header, .pc-pay-result-wrapper .at-modal__header.paySuccess-header, .pc-pay-result-wrapper .at-modal__header.renewFail-header, .pc-pay-result-wrapper .at-modal__header.renewSuccess-header {
+    text-align: center;
+    background-color: rgba(201, 0, 24, 0.03); }
+    .pc-pay-result-wrapper .at-modal__header.payFail-header .header-title, .pc-pay-result-wrapper .at-modal__header.paySuccess-header .header-title, .pc-pay-result-wrapper .at-modal__header.renewFail-header .header-title, .pc-pay-result-wrapper .at-modal__header.renewSuccess-header .header-title {
+      font-size: 30px;
+      color: #C90018; }
+  .pc-pay-result-wrapper .at-modal__header.paySuccess-header .header-title, .pc-pay-result-wrapper .at-modal__header.renewSuccess-header .header-title {
+    color: #3089DC;
+    margin: 0 auto; }
+
+.pc-pay-result-wrapper .at-modal__content {
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 12px; }
+  .pc-pay-result-wrapper .at-modal__content .paySuccess-img {
+    align-self: center;
+    margin-top: 12px;
+    width: 300px;
+    height: 206px; }
+  .pc-pay-result-wrapper .at-modal__content .text-row {
+    margin-bottom: 12px; }
+
+.pc-pay-result-wrapper .at-modal__footer .at-modal__action > * {
+  min-height: 30px; }
+
+.pc-pay-result-wrapper .at-modal__footer .at-modal__action .leftBtn {
+  color: #666;
+  flex: 1; }
+
+.pc-pay-result-wrapper .at-modal__footer .at-modal__action .rightBtn {
+  background-color: #3089DC;
+  color: white !important;
+  flex: 1; }
+
+.pc-pay-result-wrapper .at-modal__footer .at-modal__action .onlyBtn {
+  flex: 1; }

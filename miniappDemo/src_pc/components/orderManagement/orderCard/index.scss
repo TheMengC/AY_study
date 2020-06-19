@@ -1,0 +1,179 @@
+@import "../../../style/index";
+
+.order-list {
+    font-weight: 700;   
+    min-height: 40px;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;   
+
+    .order-title{
+        white-space: nowrap;
+        height: 40px;
+        background: #eef7ff;
+        border: 1px solid #e6e6e6;
+        -ms-flex: 1;
+        flex: 1;
+        padding-left: 10px;
+        line-height: 40px;
+        position: relative;
+
+        .check-box{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .order-tab{
+            margin-left: 30px;
+            margin-right: 10px;
+            display: inline-block;
+            background-color: #ffa033;
+            font-size: 12px;
+            color:#ffffff;
+        }
+
+        .order-id{
+            margin-left: 10px;
+            display: inline-block;
+        }
+        .order-icon{
+            color: #999;
+            margin-left: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .order-time{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    .order-content{
+        width: 100%;
+        display: flex;
+
+        .order-goods{
+            flex: 2;
+        }
+
+        .user-icon{
+            flex: 1;
+            border: 1px solid #e6e6e6;
+
+            .order-wang{
+                color: #3089dc;
+                margin-left: 5px;
+                display: inline-block;
+                font-size: 18px;
+            }
+            .order-last{
+                color: #999;
+                margin-left: 5px;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .order-icon{
+                color: #999;
+                margin-left: 20px;
+                display: inline-block;
+                font-size: 14px;
+            }
+
+            .order-time{
+                display: inline-block;
+                margin-left: 5px;
+                color: #3089dc;
+            }
+
+            .order-item{
+                margin-top: 5px;
+            }
+        }
+        .order-price{
+            flex: 1.2;
+            border: 1px solid #e6e6e6;
+            .price-box{
+                margin-top: 20px;
+                margin-left: 10px;
+
+                .result-title{
+                    display: inline;
+                }
+                .result-price{
+                    color: #f40;
+                    display: inline;
+                }
+                .result-post{
+                    display: inline;
+                }
+            }
+            
+            .order-num{
+                margin-left: 10px;
+            }
+        }
+        .order-result{
+            flex: 1;
+            border: 1px solid #e6e6e6;
+            display:flex;
+            justify-content: center;
+            align-items: center;    
+
+            .order-icon{
+                color: #999;
+                margin-left: 10px;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .order-detail{
+                display: inline-block;
+                margin-left: 10px;
+                color: #3089dc;
+            }
+        }
+        .order-change{
+            flex: 1;
+            border: 1px solid #e6e6e6;
+            padding-top: 30px;
+            padding-left: 15px;
+
+            .order-icon{
+                color: #999;
+                margin-left: 10px;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .order-detail{
+                display: inline-block;
+                margin-left: 10px;
+                color: #3089dc;
+            }
+        }
+    }
+
+    .order-footer{
+        white-space: nowrap;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        -ms-flex: 1;
+        flex: 1;
+        padding-left: 10px;
+        line-height: 40px;
+        position: relative;
+
+        .order-icon{
+            color: #999;
+            margin-left: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .order-sure{
+            margin-left: 20px;  
+            display: inline-block;
+            color: #3089dc;
+        }
+    }
+}

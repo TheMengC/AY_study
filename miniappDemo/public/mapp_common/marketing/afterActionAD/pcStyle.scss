@@ -1,0 +1,158 @@
+$mainBlue: #4970ff;
+$secondBlue: #f0f3ff;
+
+// 图片样式
+@mixin imgStyle($width,$height:$width) {
+  width: $width;
+  height: $height;
+  display: block;
+}
+
+// 按钮样式
+@mixin btnStyle {
+  cursor: pointer;
+}
+
+.pc-after-action-modal {
+  flex-direction: column;
+
+  .afterActionModal {
+    width: 416px;
+    height: 500px;
+    background-color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .modalTopImage {
+    @include imgStyle(118px);
+  }
+
+  .modalTitle {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  .modalText {
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .modalMiddleImgWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 42px;
+    padding: 0 16px 0 16px;
+    box-sizing: border-box;
+
+    .modalMiddleImg {
+      @include imgStyle(83px);
+    }
+
+    .modalMiddleImgText {
+      margin-top: 8px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  .modalBtnsWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    .modalActionBtn {
+      flex: 1;
+      height: 62.5px;
+      font-size: 20px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include btnStyle;
+
+      @mixin roundBtn($bgColor,$borderColor:$bgColor) {
+        background-color: $bgColor;
+        border-radius: 45px;
+        border: 1px solid $borderColor;
+        transition: all 0.3s;
+        box-shadow: none;
+
+        &:hover {
+          box-shadow: 0 6px 8px rgba($mainBlue, 0.3);
+        }
+      }
+
+      &:nth-child(1) {
+        @include roundBtn($mainBlue);
+        color: #fff;
+      }
+
+      &:nth-child(2) {
+        @include roundBtn($secondBlue, $mainBlue);
+        color: $mainBlue;
+        margin-right: 18px;
+      }
+    }
+
+    .suggestImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 64px;
+      height: 64px;
+      cursor: pointer;
+    }
+  }
+
+  .modalDownBtn {
+    margin-top: 16px;
+    color: white;
+    font-size: 18px;
+    @include btnStyle;
+    border-bottom: 1px solid transparent;
+    opacity: 1;
+
+    &:hover {
+      transition: all 0.3s;
+      opacity: 0.6;
+    }
+
+    &.modalDownImg {
+      @include imgStyle(30px)
+    }
+  }
+}
+
+.pc-after-action-ball {
+
+  .commonBallStyle {
+    z-index: 1001;
+    cursor: pointer;
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    .afterActionBallImg {
+      width: 60px;
+      height: 60px;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*
+ * 新手任务对应的任务id
+*/
+export const NEWUSERTASKS_ID = {
+    SINGLE_ORDER_DELIVERY: 9,
+    WANG2_CALL_PAY: 10,
+    SINGLE_ORDER_EVALUATE: 11,
+    VERIFY_ADDRESS: 12,
+    ORDERS_SEARCH: 14,
+    WANG2_CALL_PRAISE: 15,
+};

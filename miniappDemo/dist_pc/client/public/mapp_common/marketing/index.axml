@@ -1,0 +1,100 @@
+<template name="renderMarktingModal">
+    <block>
+        <block>
+            <block a:if="{{type === MARKETING_TYPE.modal || type === MARKETING_TYPE.commonModal}}">
+                <block a:if="{{flag}}">
+                    <modal-a-dpc compid="{{$compid__4}}"></modal-a-dpc>
+                </block>
+                <block a:else>
+                    <modal-ad compid="{{$compid__5}}"></modal-ad>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.banner}}">
+                <block a:if="{{flag}}">
+                    <banner-a-dpc compid="{{$compid__6}}"></banner-a-dpc>
+                </block>
+                <block a:else>
+                    <banner-ad compid="{{$compid__7}}"></banner-ad>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.afterAction}}">
+                <block a:if="{{flag}}">
+                    <after-action-a-dpc compid="{{$compid__8}}"></after-action-a-dpc>
+                </block>
+                <block a:else>
+                    <after-action-ad compid="{{$compid__9}}"></after-action-ad>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.midModal}}">
+                <block a:if="{{flag}}">
+                    <renew-box-pc compid="{{$compid__10}}"></renew-box-pc>
+                </block>
+                <block a:else>
+                    <renew-box compid="{{$compid__11}}"></renew-box>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.midCoupon}}">
+                <block a:if="{{flag}}">
+                    <mid-coupon-pc compid="{{$compid__12}}"></mid-coupon-pc>
+                </block>
+                <block a:else>
+                    <mid-coupon compid="{{$compid__13}}"></mid-coupon>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.notice}}">
+                <block a:if="{{flag}}">
+                    <notice-pc compid="{{$compid__14}}"></notice-pc>
+                </block>
+                <block a:else>
+                    <notice compid="{{$compid__15}}"></notice>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.modalVip}}">
+                <block a:if="{{flag}}">
+                    <modal-vi-ppc compid="{{$compid__16}}"></modal-vi-ppc>
+                </block>
+                <block a:else>
+                    <modal-vip compid="{{$compid__17}}"></modal-vip>
+                </block>
+            </block>
+            <block a:elif="{{type === MARKETING_TYPE.midCard}}">
+                <block a:if="{{flag}}">
+                    <mid-card compid="{{$compid__18}}"></mid-card>
+                </block>
+            </block>
+        </block>
+    </block>
+</template>
+<template name="renderPayResult">
+    <block>
+        <block>
+            <block a:if="{{anonymousState__temp}}">
+                <pay-result-pc compid="{{$compid__19}}"></pay-result-pc>
+            </block>
+            <block a:else>
+                <pay-result compid="{{$compid__20}}"></pay-result>
+            </block>
+        </block>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{!hasPid}}">
+        <view></view>
+    </block>
+    <block a:elif="{{anonymousState__temp5}}">
+        <view></view>
+    </block>
+    <block a:else>
+        <block a:if="{{showAD}}">
+            <view>
+                <template is="renderMarktingModal" data="{{..._$_$anonymousState__temp}}"></template>
+                <block a:if="{{showPayResult}}">
+                    <template is="renderPayResult" data="{{..._$_$anonymousState__temp2}}"></template>
+                </block>
+            </view>
+        </block>
+        <block a:elif="{{showPayResult}}">
+            <template is="renderPayResult" data="{{..._$_$anonymousState__temp3}}"></template>
+        </block>
+    </block>
+</block>

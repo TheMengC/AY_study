@@ -1,0 +1,80 @@
+.logistics-address-edit-dialog {
+    .at-modal__container {
+        width: 900px;
+        height: 628px;
+    }
+
+    .title {
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    .body {
+        padding: 20px;
+
+        .form-item {
+            font-size: 14px;
+            margin-bottom: 14px;
+
+            .label {
+                margin: 8px 0 0 0;
+                padding: 0 !important;
+                text-align: left;
+
+                .required-icon {
+                    color: #FF0000;
+                    margin-right: 6px;
+                }
+
+                .no-required-icon {
+                    margin-right: 13px;
+                }
+
+                .label-text {
+                    color: #595959;
+                }
+            }
+            .label-right {
+                text-align: right;
+                padding-right: 16px !important;
+            }
+
+            .extra-label {
+                padding-left: 30px;
+            }
+
+            .textarea {
+                width: 100%;
+            }
+
+            .input {
+                width: auto;
+            }
+
+            .bottom-btns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+
+                .help {
+                    display: flex;
+                    align-items: center;
+                    color: #595959;
+                    .iconfont{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .bottom-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

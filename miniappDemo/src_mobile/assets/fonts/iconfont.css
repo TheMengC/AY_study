@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('https://q.aiyongbao.com/miniapp/trade/assets/mobile/iconfont/iconfont_v10.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'aiNumber';
+    src: url("https://q.aiyongbao.com/miniapp/trade/assets/mobile/iconfont/AiNumber.woff") format('woff');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-home_update:before {
+    content: "\e661";
+}
+
+.iconfont-order_deliver:before {
+    content: "\e667";
+}
+
+.iconfont-order_refund:before {
+    content: "\e668";
+}
+
+.iconfont-order_pay:before {
+    content: "\e669";
+}
+
+.iconfont-order_prepare:before {
+    content: "\e66a";
+}
+
+.iconfont-order_comment:before {
+    content: "\e66b";
+}
+
+.iconfont-nav_home:before {
+    content: "\e66d";
+}
+
+.iconfont-nav_order:before {
+    content: "\e66e";
+}
+
+.iconfont-nav_personal:before {
+    content: "\e66f";
+}
+
+.iconfont-search_scan:before {
+    content: "\e671";
+}
+
+.iconfont-bt_arrowright:before {
+    content: "\e672";
+}
+
+.iconfont-search_search:before {
+    content: "\e670";
+}
+
+.iconfont-arrow:before {
+    content: "\e673";
+}
+
+.iconfont-my_dzmd:before {
+    content: "\e674";
+}
+
+.iconfont-my_print:before {
+    content: "\e675";
+}
+
+.iconfont-my_remark:before {
+    content: "\e676";
+}
+
+.iconfont-my_comment:before {
+    content: "\e677";
+}
+
+.iconfont-my_printlist:before {
+    content: "\e678";
+}
+
+.iconfont-my_wangwang:before {
+    content: "\e679";
+}
+
+.iconfont-my_address:before {
+    content: "\e67a";
+}
+
+.iconfont-my_check:before {
+    content: "\e67b";
+}
+
+.iconfont-my_deliver:before {
+    content: "\e67c";
+}
+
+.iconfont-my_moreaddress:before {
+    content: "\e67d";
+}
+
+.iconfont-my_online:before {
+    content: "\e67e";
+}
+
+.iconfont-my_zan:before {
+    content: "\e67f";
+}
+
+.iconfont-my_serviceno:before {
+    content: "\e680";
+}
+
+.iconfont-my_tbservice:before {
+    content: "\e681";
+}
+
+.iconfont-my_feedback:before {
+    content: "\e682";
+}
+
+.iconfont-my_init:before {
+    content: "\e683";
+}
+
+.iconfont-my_ayservice:before {
+    content: "\e684";
+}
+
+.iconfont-my_authoriz:before {
+    content: "\e685";
+}
+
+.iconfont-ic_arrowud:before {
+    content: "\e686";
+}
+
+.iconfont-ic_remark:before {
+    content: "\e687";
+}
+
+.iconfont-ic_warming:before {
+    content: "\e688";
+}
+
+.iconfont-ic_wangwang:before {
+    content: "\e689";
+}
+
+.iconfont-order_copy:before {
+    content: "\e68a";
+}
+
+.iconfont-order_:before {
+    content: "\e68b";
+}
+
+.iconfont-order_creditcard:before {
+    content: "\e68c";
+}
+
+.iconfont-order_edit:before {
+    content: "\e68d";
+}
+
+.iconfont-order_1:before {
+    content: "\e68e";
+}
+
+.iconfont-order_filter:before {
+    content: "\e68f";
+}
+
+.iconfont-order_forbide:before {
+    content: "\e691";
+}
+
+.iconfont-order_huabei:before {
+    content: "\e692";
+}
+
+.iconfont-order_user:before {
+    content: "\e694";
+}
+
+.iconfont-order_more:before {
+    content: "\e695";
+}
+
+.iconfont-order_closeorder:before {
+    content: "\e696";
+}
+
+.iconfont-order_mobile:before {
+    content: "\e697";
+}
+
+.iconfont-order_scan:before {
+    content: "\e698";
+}
+
+.iconfont-order_wangwang:before {
+    content: "\e699";
+}
+
+.iconfont-order_comment1:before {
+    content: "\e69a";
+}
+
+.iconfont-order_comment2:before {
+    content: "\e69b";
+}
+
+.iconfont-ic_checkbox_:before {
+    content: "\e69c";
+}
+
+.iconfont-ic_checkbox_1:before {
+    content: "\e69d";
+}
+
+.iconfont-ic_arrowup:before {
+    content: "\e69e";
+}
+
+.iconfont-ic_:before {
+    content: "\e69f";
+}
+
+.iconfont-ewaijiantou:before {
+    content: "\e6a0";
+}
+
+.iconfont-order_refresh:before {
+    content: "\e6a1";
+}
+
+.iconfont-yunying_announcement:before {
+    content: "\e6a2";
+}
+
+.iconfont-input_clear:before {
+    content: "\e6a3";
+}
+
+.iconfont-order_calandar:before {
+    content: "\e6a4";
+}
+
+.iconfont-my_unit:before {
+    content: "\e6a5";
+}
+
+.iconfont-daipingjia:before {
+    content: "\e6a6";
+}
+
+.iconfont-daichulizhong:before {
+    content: "\e6a7";
+}
+
+.iconfont-jintianlouping:before {
+    content: "\e6a8";
+}
+
+.iconfont-daichulichaping:before {
+    content: "\e6a9";
+}
+
+.iconfont-order_down:before {
+    content: "\e6aa";
+}
+
+.iconfont-order_up:before {
+    content: "\e6ab";
+}
+
+.arrow-left:before {
+  content: "\e6c1";
+}
+

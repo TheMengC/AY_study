@@ -1,0 +1,22 @@
+
+.pc-mid-coupon-wrapper {
+  position: fixed;
+  bottom: 200px;
+  right: 0;
+  z-index: 200; }
+  .pc-mid-coupon-wrapper .mid-coupon {
+    display: flex;
+    position: relative;
+    width: 64px;
+    height: 92px;
+    background-size: 100% 100%; }
+    .pc-mid-coupon-wrapper .mid-coupon .timer {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      position: absolute;
+      width: 68px;
+      bottom: 2px;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center; }

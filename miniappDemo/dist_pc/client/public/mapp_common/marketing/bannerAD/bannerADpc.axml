@@ -1,0 +1,10 @@
+<block a:if="{{$taroCompReady}}">
+    <block>
+        <block a:if="{{anonymousState__temp}}">
+            <view class="{{'pc banner-ad-wrapper ' + _$extraClass}}">
+                <view class="banner-ad-pic" style="{{_$anonymousState__temp}}" onTap="clickAD" data-e-onTap-so="this" data-e-onTap-a-a="{{_$adData}}"></view>
+                <view class="marketing-closer banner-closer" onTap="closeAD"></view>
+            </view>
+        </block>
+    </block>
+</block>

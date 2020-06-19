@@ -1,0 +1,15 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="{{'dialog-manager ' + openDialog.length == 0 ? 'opened' : ''}}">
+        <block a:for="{{loopArray3}}" a:for-item="key" a:for-index="_anonIdx2">
+            <block a:if="{{'testDialog' === key.$original}}">
+                <test-dialog compid="{{key.$compid__24}}"></test-dialog>
+            </block>
+            <block a:elif="{{'ConfirmDialog' === key.$original}}">
+                <confirm-dialog compid="{{key.$compid__25}}"></confirm-dialog>
+            </block>
+            <block a:elif="{{'InputDialog' === key.$original}}">
+                <input-dialog compid="{{key.$compid__26}}"></input-dialog>
+            </block>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,160 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.order-list {
+  font-weight: 700;
+  min-height: 40px;
+  font-size: 12px;
+  color: #333;
+  margin-top: 10px; }
+  .order-list .order-title {
+    white-space: nowrap;
+    height: 40px;
+    background: #eef7ff;
+    border: 1px solid #e6e6e6;
+    flex: 1;
+    padding-left: 10px;
+    line-height: 40px;
+    position: relative; }
+    .order-list .order-title .check-box {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .order-list .order-title .order-tab {
+      margin-left: 30px;
+      margin-right: 10px;
+      display: inline-block;
+      background-color: #ffa033;
+      font-size: 12px;
+      color: #ffffff; }
+    .order-list .order-title .order-id {
+      margin-left: 10px;
+      display: inline-block; }
+    .order-list .order-title .order-icon {
+      color: #999;
+      margin-left: 10px;
+      display: inline-block;
+      font-size: 14px; }
+    .order-list .order-title .order-time {
+      display: inline-block;
+      margin-left: 10px; }
+  .order-list .order-content {
+    width: 100%;
+    display: flex; }
+    .order-list .order-content .order-goods {
+      flex: 2; }
+    .order-list .order-content .user-icon {
+      flex: 1;
+      border: 1px solid #e6e6e6; }
+      .order-list .order-content .user-icon .order-wang {
+        color: #3089dc;
+        margin-left: 5px;
+        display: inline-block;
+        font-size: 18px; }
+      .order-list .order-content .user-icon .order-last {
+        color: #999;
+        margin-left: 5px;
+        display: inline-block;
+        font-size: 14px; }
+      .order-list .order-content .user-icon .order-icon {
+        color: #999;
+        margin-left: 20px;
+        display: inline-block;
+        font-size: 14px; }
+      .order-list .order-content .user-icon .order-time {
+        display: inline-block;
+        margin-left: 5px;
+        color: #3089dc; }
+      .order-list .order-content .user-icon .order-item {
+        margin-top: 5px; }
+    .order-list .order-content .order-price {
+      flex: 1.2;
+      border: 1px solid #e6e6e6; }
+      .order-list .order-content .order-price .price-box {
+        margin-top: 20px;
+        margin-left: 10px; }
+        .order-list .order-content .order-price .price-box .result-title {
+          display: inline; }
+        .order-list .order-content .order-price .price-box .result-price {
+          color: #f40;
+          display: inline; }
+        .order-list .order-content .order-price .price-box .result-post {
+          display: inline; }
+      .order-list .order-content .order-price .order-num {
+        margin-left: 10px; }
+    .order-list .order-content .order-result {
+      flex: 1;
+      border: 1px solid #e6e6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .order-list .order-content .order-result .order-icon {
+        color: #999;
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 14px; }
+      .order-list .order-content .order-result .order-detail {
+        display: inline-block;
+        margin-left: 10px;
+        color: #3089dc; }
+    .order-list .order-content .order-change {
+      flex: 1;
+      border: 1px solid #e6e6e6;
+      padding-top: 30px;
+      padding-left: 15px; }
+      .order-list .order-content .order-change .order-icon {
+        color: #999;
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 14px; }
+      .order-list .order-content .order-change .order-detail {
+        display: inline-block;
+        margin-left: 10px;
+        color: #3089dc; }
+  .order-list .order-footer {
+    white-space: nowrap;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    flex: 1;
+    padding-left: 10px;
+    line-height: 40px;
+    position: relative; }
+    .order-list .order-footer .order-icon {
+      color: #999;
+      margin-left: 10px;
+      display: inline-block;
+      font-size: 14px; }
+    .order-list .order-footer .order-sure {
+      margin-left: 20px;
+      display: inline-block;
+      color: #3089dc; }

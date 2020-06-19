@@ -1,0 +1,21 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp2}}">
+        <view></view>
+    </block>
+    <block a:elif="{{!num}}">
+        <view></view>
+    </block>
+    <view class="pc-mid-coupon-wrapper" a:else>
+        <block>
+            <block a:if="{{adState == 'coupon'}}">
+                <view class="mid-coupon" style="{{anonymousState__temp}}" onTap="clickCoupon">
+                    <view class="timer"><text>{{num}}</text><text>后失效</text>
+                    </view>
+                </view>
+            </block>
+            <block a:else>
+                <marketing compid="{{$compid__29}}"></marketing>
+            </block>
+        </block>
+    </view>
+</block>

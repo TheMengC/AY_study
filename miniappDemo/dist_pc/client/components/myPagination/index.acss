@@ -1,0 +1,75 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.next-pagination {
+  display: flex; }
+  .next-pagination .next-pagination-size-selector-title {
+    display: none; }
+  .next-pagination .next-prev, .next-pagination .next-next {
+    height: 36px;
+    color: #1890FF;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #d7dbe0; }
+  .next-pagination .next-pagination-list {
+    display: inline-flex;
+    align-items: center; }
+    .next-pagination .next-pagination-list .next-pagination-item {
+      width: 34px;
+      height: 36px;
+      padding: 0;
+      color: #333;
+      background: white;
+      border-radius: 3px;
+      border: 1px solid #d7dbe0; }
+    .next-pagination .next-pagination-list .next-current {
+      color: #fff;
+      background: #3386f1;
+      border: 1px solid #3386f1; }
+  .next-pagination .next-btn.disabled, .next-pagination .next-btn.disabled:link, .next-pagination .next-btn.disabled:visited, .next-pagination .next-btn.disabled.visited, .next-pagination .next-btn[disabled], .next-pagination .next-btn[disabled]:link, .next-pagination .next-btn[disabled]:visited, .next-pagination .next-btn[disabled].visited {
+    color: #C4C6CF; }
+  .next-pagination .next-btn.disabled, .next-pagination .next-btn[disabled] {
+    cursor: not-allowed;
+    background-color: #FAFBFC;
+    border-color: #F2F2F2; }
+  .next-pagination .next-pagination-size-selector {
+    margin-left: 6px; }
+    .next-pagination .next-pagination-size-selector .next-select-inner {
+      font-size: 14px;
+      width: 95px;
+      height: 36px;
+      background: white;
+      border-radius: 3px;
+      border: 1px solid #d7dbe0; }
+    .next-pagination .next-pagination-size-selector .next-input.next-medium .next-input-text-field {
+      font-size: 14px; }

@@ -1,0 +1,370 @@
+@import "style/index";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PingFang SC, 微软雅黑;
+    user-select: text !important;
+}
+
+page {
+    background-color: #F0F2F5;
+}
+
+.grid-cont, .grid-gap-cont {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    padding-right: -10px;
+}
+
+.grid-gap-cont {
+    grid-column-gap: 10px;
+}
+
+//[class*='grid-item'] {
+//    border: 1px solid #fff;
+//    background-color: palegoldenrod;
+//}
+.grid-item1 {
+    grid-column-start: span 1;
+}
+
+.grid-item2 {
+    grid-column-start: span 2;
+}
+
+.grid-item3 {
+    grid-column-start: span 3;
+}
+
+.grid-item4 {
+    grid-column-start: span 4;
+}
+
+.grid-item5 {
+    grid-column-start: span 5;
+}
+
+.grid-item6 {
+    grid-column-start: span 6;
+}
+
+.grid-item7 {
+    grid-column-start: span 7;
+}
+
+.grid-item8 {
+    grid-column-start: span 8;
+}
+
+.grid-item9 {
+    grid-column-start: span 9;
+}
+.grid-item10 {
+    grid-column-start: span 10;
+}
+
+.grid-item11 {
+    grid-column-start: span 11;
+}
+
+.grid-item12 {
+    grid-column-start: span 12;
+}
+
+.grid-item13 {
+    grid-column-start: span 13;
+}
+
+.grid-item14 {
+    grid-column-start: span 14;
+}
+
+.grid-item15 {
+    grid-column-start: span 15;
+}
+
+.grid-item16 {
+    grid-column-start: span 16;
+}
+
+.grid-item19 {
+    grid-column-start: span 19;
+}
+
+.grid-item20 {
+    grid-column-start: span 20;
+}
+
+.grid-item21 {
+    grid-column-start: span 21;
+}
+
+.grid-item22 {
+    grid-column-start: span 22;
+}
+
+.grid-item24 {
+    grid-column-start: span 24;
+}
+
+// 按钮
+@mixin trade-btn-small {
+    padding: 5px 16px;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.trade-btn-small-primary {
+    @include trade-btn-small;
+    background: #1890FF;
+    color: #FFFFFF;
+    border: 1px solid #1890FF;
+}
+
+.trade-btn-small-normal {
+    @include trade-btn-small;
+    background: #FFFFFF;
+    color: #595959;
+    border: 1px solid #D9D9D9;
+}
+
+.trade-btn-small-empty {
+    @include trade-btn-small;
+    background: #FFFFFF;
+    color: #1890FF;
+    border: 1px solid #1890FF;
+}
+
+.trade-btn-left {
+    margin-right: 14px;
+}
+
+// radio 组件样式
+.next-radio-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.next-radio-wrapper .next-radio-inner, .next-radio-wrapper .next-radio input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.next-radio-wrapper.checked .next-radio-inner:after {
+    width: 12px;
+    height: 12px;
+}
+
+.next-radio-wrapper .next-radio-inner:after {
+    top: 3px;
+    left: 3px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.at-tabs__item--active {
+    color: #6190E8 !important;
+}
+
+// select 组件样式
+.next-input.next-medium {
+    height: 36px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.next-menu-item {
+    color: #595959;
+}
+
+.next-input {
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+
+.next-input.next-medium .next-input-text-field {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.next-input.next-medium .next-icon:before {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+}
+
+.next-input.next-medium .next-input-control {
+    padding-right: 12px;
+}
+
+// textarea 组件样式
+.next-input.next-input-textarea {
+    padding: 4px 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.next-input.next-focus {
+    border-color: $AyBlue;
+}
+
+// button 组件样式
+.next-btn.next-medium {
+    height: 32px;
+    padding: 0 18px;
+    border-radius: 4px;
+}
+
+.next-btn.next-btn-normal, .next-btn.next-btn-normal:link, .next-btn.next-btn-normal:visited, .next-btn.next-btn-normal.visite {
+    background: rgba(255, 255, 255, 1);
+    color: #595959;
+}
+
+// switch 样式
+.next-switch-on {
+    background: linear-gradient(270deg, rgba(94, 190, 240, 1) 0%, rgba(24, 144, 255, 1) 100%) !important;
+}
+.next-switch-medium {
+    width: 44px;
+    height: 22px;
+}
+.next-switch-medium:after {
+    width: 20px;
+    height: 20px;
+}
+
+.next-switch-off {
+    background: #F2F2F2 !important;
+}
+
+// input 组件样式
+.next-input.next-large {
+    border-radius: 4px;
+}
+
+// 魔改CheckBox样式
+.next-checkbox-wrapper {
+   display: inline-flex;
+    font-size: 18px;
+
+    &.disabled.checked {
+        .next-checkbox {
+            .next-checkbox-inner {
+                border-color: #DDDDDD !important;
+                background-color: #DDDDDD !important;
+            }
+        }
+    }
+
+    &.checked {
+        .next-checkbox {
+            .next-checkbox-inner {
+                background-color: $AyBlue !important;
+                border-color: $AyBlue !important;
+
+                .next-icon {
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+    }
+
+    .next-checkbox {
+        .next-checkbox-inner {
+            width: 18px;
+            height: 18px;
+            font-size: 18px;
+        }
+    }
+
+    .next-checkbox-label {
+        margin-left: 10px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .next-checkbox-inner {
+        > .next-icon {
+            line-height: 18px;
+            margin: 0;
+            transform: scale(0.7)!important;
+        }
+    }
+}
+
+// 边框蓝色的button
+.next-btn.blue-br-btn {
+    padding: 0 16px;
+    font-size: 14px;
+    border-color: $AyBlue !important;
+    color: $AyBlue !important;
+    background-color: #FFFFFF;
+}
+
+// 弹窗的大小
+.at-modal__container {
+    border-radius: 4px !important;
+}
+
+.flex-placeholder {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.blue-link {
+    cursor: pointer;
+    color: $AyBlue;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+}
+.caption {
+    display: table-caption;
+}
+.colgroup {
+    display: table-column-group;
+}
+.thead {
+    display: table-header-group;
+    background-color: #ebebeb;
+}
+.tfoot {
+    display: table-footer-group;
+}
+.tbody {
+    display: table-row-group;
+}
+.td {
+    display: table-cell;
+    padding: 8px;
+}
+.col {
+    display: table-column;
+}
+.tr {
+    display: table-row;
+}
+.table, .th, .td{
+    border: 1px solid #CCCCCC;
+}
+
+//有图标的按钮
+.icon-btn {
+    display: flex;
+    align-items: center;
+    width: unset !important;
+    text {
+        margin-right: 5px;
+    }
+}
+.next-range-picker-trigger {
+    padding-right: 15px;
+}

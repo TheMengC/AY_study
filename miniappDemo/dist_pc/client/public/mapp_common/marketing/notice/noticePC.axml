@@ -1,0 +1,11 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp2}}">
+        <view></view>
+    </block>
+    <block a:elif="{{anonymousState__temp}}">
+        <view class="pc-notice">
+            <view class="notice-text" onTap="clickNotie">{{textList.content}}</view>
+            <view class="marketing-closer notice-closer" onTap="closeNotice"></view>
+        </view>
+    </block>
+</block>

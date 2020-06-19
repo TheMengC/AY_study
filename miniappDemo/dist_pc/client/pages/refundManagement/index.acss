@@ -1,0 +1,96 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.refundmanagement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #F0F2F5; }
+  .refundmanagement .refund-search {
+    height: 64px;
+    box-shadow: 0px 2px 12px 0px rgba(204, 204, 204, 0.2);
+    border-radius: 4px;
+    margin: 20px 20px 9px 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center; }
+  .refundmanagement .input {
+    margin-left: 20px;
+    width: 230px;
+    height: 36px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    font-size: 14px; }
+  .refundmanagement .button {
+    width: 92px;
+    height: 36px;
+    background: #1890ff;
+    border-radius: 4px;
+    margin-left: 20px;
+    line-height: 36px; }
+    .refundmanagement .button .button-text {
+      font-size: 14px;
+      font-weight: 400;
+      color: white; }
+  .refundmanagement .tab-con {
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+    .refundmanagement .tab-con .at-tabs--scroll .at-tabs__header {
+      overflow: visible !important; }
+  .refundmanagement .trade-scroll {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
+    .refundmanagement .trade-scroll .custom-tab {
+      width: 920px !important; }
+  .refundmanagement .side-tab {
+    width: 170px;
+    background-color: #fff; }
+  .refundmanagement .refund-footer {
+    flex-shrink: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px 0 22px;
+    font-size: 14px;
+    background-color: #FFFFFF; }

@@ -1,0 +1,22 @@
+.modal-ad-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index:900;
+    .modal-ad-main{
+        position: relative;
+        flex-direction:column;
+        display:flex;
+        align-items:center;
+        .modal-ad-closer{
+            color: rgba(256,256,256,0.8);
+            margin-top: 8px;
+        }
+    }
+}

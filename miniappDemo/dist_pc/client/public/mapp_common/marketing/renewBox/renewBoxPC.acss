@@ -1,0 +1,76 @@
+
+.renew-box-wrapper {
+  position: fixed;
+  z-index: 899;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
+  animation: showBox 1s ease-in-out;
+  animation-fill-mode: forwards; }
+  .renew-box-wrapper.close-now {
+    animation: closeBox 1s ease-in-out;
+    animation-fill-mode: forwards; }
+
+@keyframes showBox {
+  from {
+    top: -294rpx; }
+  to {
+    top: 0; } }
+
+@keyframes closeBox {
+  from {
+    top: 0; }
+  to {
+    top: -294rpx; } }
+  .renew-box-wrapper .renew-box {
+    width: 100%;
+    height: 230rpx;
+    padding: 20rpx;
+    border-radius: 0 0 24px 24px;
+    background: linear-gradient(180deg, white 0%, #f7f7f7 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box; }
+    .renew-box-wrapper .renew-box .content {
+      display: flex;
+      flex-direction: row; }
+      .renew-box-wrapper .renew-box .content .renew-img-trade {
+        width: 88rpx;
+        height: 88rpx;
+        background: url("//q.aiyongbao.com/miniapp/marketing/mobile/mid_modal_pic.png");
+        background-size: 100% 100%;
+        border-radius: 100%;
+        margin-right: 20rpx; }
+      .renew-box-wrapper .renew-box .content .renew-img-item {
+        width: 88rpx;
+        height: 88rpx;
+        background: url("//q.aiyongbao.com/miniapp/marketing/mobile/mid_modal_pic_item.png");
+        background-size: 100% 100%;
+        border-radius: 100%;
+        margin-right: 20rpx; }
+      .renew-box-wrapper .renew-box .content .renew-text {
+        width: 602rpx;
+        height: 120rpx;
+        color: #333333;
+        line-height: 46rpx;
+        font-size: 28rpx;
+        font-weight: 400; }
+    .renew-box-wrapper .renew-box .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      .renew-box-wrapper .renew-box .btns .dismiss, .renew-box-wrapper .renew-box .btns .dismiss-trade, .renew-box-wrapper .renew-box .btns .dismiss-item {
+        margin-right: 40rpx; }
+      .renew-box-wrapper .renew-box .btns .dismiss-trade {
+        color: #f37845; }
+      .renew-box-wrapper .renew-box .btns .dismiss-item {
+        color: #6E6E6E; }
+      .renew-box-wrapper .renew-box .btns .tradebtn {
+        min-width: unset; }
+      .renew-box-wrapper .renew-box .btns .itembtn {
+        min-width: unset; }

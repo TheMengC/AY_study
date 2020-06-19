@@ -1,0 +1,111 @@
+
+.after-action-modal {
+  flex-direction: column; }
+  .after-action-modal .afterActionModal {
+    width: 520rpx;
+    height: 660rpx;
+    background-color: white;
+    border-radius: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx;
+    flex-direction: column; }
+  .after-action-modal .modalTopImage {
+    width: 170rpx;
+    height: 170rpx;
+    display: block; }
+  .after-action-modal .modalTitle {
+    font-size: 38rpx;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 14rpx; }
+  .after-action-modal .modalText {
+    font-size: 28rpx;
+    color: #333;
+    line-height: 42rpx;
+    margin-bottom: 30rpx;
+    padding: 0 16rpx 0 16rpx; }
+  .after-action-modal .modalMiddleImgWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 42rpx;
+    padding: 0 16rpx 0 16rpx; }
+    .after-action-modal .modalMiddleImgWrap .modalMiddleImg {
+      width: 120rpx;
+      height: 120rpx;
+      display: block; }
+    .after-action-modal .modalMiddleImgWrap .modalMiddleImgText {
+      margin-top: 12rpx;
+      font-size: 26rpx;
+      color: #333;
+      text-align: center; }
+  .after-action-modal .modalBtnsWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative; }
+    .after-action-modal .modalBtnsWrap .modalActionBtn {
+      flex: 1;
+      height: 90rpx;
+      font-size: 30rpx;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .after-action-modal .modalBtnsWrap .modalActionBtn:nth-child(1) {
+        background-color: #4970ff;
+        border-radius: 45rpx;
+        border: 2rpx solid #4970ff;
+        transition: all 0.3s;
+        box-shadow: none;
+        color: #fff; }
+        .after-action-modal .modalBtnsWrap .modalActionBtn:nth-child(1):hover {
+          box-shadow: 0 6rpx 8rpx rgba(73, 112, 255, 0.3); }
+      .after-action-modal .modalBtnsWrap .modalActionBtn:nth-child(2) {
+        background-color: #f0f3ff;
+        border-radius: 45rpx;
+        border: 2rpx solid #4970ff;
+        transition: all 0.3s;
+        box-shadow: none;
+        color: #4970ff;
+        margin-right: 26rpx; }
+        .after-action-modal .modalBtnsWrap .modalActionBtn:nth-child(2):hover {
+          box-shadow: 0 6rpx 8rpx rgba(73, 112, 255, 0.3); }
+    .after-action-modal .modalBtnsWrap .suggestImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 64rpx;
+      height: 64rpx;
+      cursor: pointer; }
+  .after-action-modal .modalDownBtn {
+    margin-top: 24px;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    opacity: 1; }
+    .after-action-modal .modalDownBtn:hover {
+      transition: all 0.3s;
+      opacity: 0.6; }
+    .after-action-modal .modalDownBtn.modalDownImg {
+      width: 80px;
+      height: 80px;
+      display: block; }
+
+.after-action-ball .commonBallStyle {
+  z-index: 1001;
+  cursor: pointer;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  opacity: 1;
+  transition: opacity 0.3s; }
+  .after-action-ball .commonBallStyle .afterActionBallImg {
+    width: 120rpx;
+    height: 120rpx;
+    display: block; }

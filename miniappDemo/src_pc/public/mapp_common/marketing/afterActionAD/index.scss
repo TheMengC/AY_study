@@ -1,0 +1,153 @@
+$mainBlue: #4970ff;
+$secondBlue: #f0f3ff;
+
+// 图片样式
+@mixin imgStyle($width,$height:$width) {
+  width: $width;
+  height: $height;
+  display: block;
+}
+
+// 按钮样式
+@mixin btnStyle {
+  cursor: pointer;
+}
+
+.after-action-modal {
+  flex-direction: column;
+
+  .afterActionModal {
+    width: 520rpx;
+    height: 660rpx;
+    background-color: white;
+    border-radius: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx;
+    flex-direction: column;
+  }
+
+  .modalTopImage {
+    @include imgStyle(170rpx);
+  }
+
+  .modalTitle {
+    font-size: 38rpx;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 14rpx;
+  }
+
+  .modalText {
+    font-size: 28rpx;
+    color: #333;
+    line-height: 42rpx;
+    margin-bottom: 30rpx;
+    padding: 0 16rpx 0 16rpx;
+  }
+
+  .modalMiddleImgWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 42rpx;
+    padding: 0 16rpx 0 16rpx;
+
+    .modalMiddleImg {
+      @include imgStyle(120rpx);
+    }
+
+    .modalMiddleImgText {
+      margin-top: 12rpx;
+      font-size: 26rpx;
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  .modalBtnsWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    .modalActionBtn {
+      flex: 1;
+      height: 90rpx;
+      font-size: 30rpx;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include btnStyle;
+
+      @mixin roundBtn($bgColor,$borderColor:$bgColor) {
+        background-color: $bgColor;
+        border-radius: 45rpx;
+        border: 2rpx solid $borderColor;
+        transition: all 0.3s;
+        box-shadow: none;
+
+        &:hover {
+          box-shadow: 0 6rpx 8rpx rgba($mainBlue, 0.3);
+        }
+      }
+
+      &:nth-child(1) {
+        @include roundBtn($mainBlue);
+        color: #fff;
+      }
+
+      &:nth-child(2) {
+        @include roundBtn($secondBlue, $mainBlue);
+        color: $mainBlue;
+        margin-right: 26rpx;
+      }
+    }
+
+    .suggestImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 64rpx;
+      height: 64rpx;
+      cursor: pointer;
+    }
+  }
+  .modalDownBtn {
+    margin-top: 24px;
+    color: white;
+    font-size: 26px;
+    @include btnStyle;
+    border-bottom: 1px solid transparent;
+    opacity: 1;
+    &:hover{
+      transition: all 0.3s;
+      opacity: 0.6;
+    }
+    &.modalDownImg{
+      @include imgStyle(80px)
+    }
+  }
+}
+
+.after-action-ball{
+
+  .commonBallStyle{
+    z-index: 1001;
+    cursor: pointer;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    .afterActionBallImg{
+      width: 120rpx;
+      height: 120rpx;
+      display: block;
+    }
+  }
+}

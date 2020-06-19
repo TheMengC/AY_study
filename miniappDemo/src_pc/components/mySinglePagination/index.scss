@@ -1,0 +1,91 @@
+.single-pagination {
+    display: flex;
+    flex-direction: row;
+    .single-page-prev {
+        margin-right: 20px;
+    }
+    .single-page-btn {
+        position: relative;
+        width: 102px;
+        height: 32px;
+        border-radius: 4px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        color: #D9D9D9;
+        text-align: center;
+        line-height: 32px;
+        .page-text-next {
+            margin-right: 10px;
+        }
+        .page-text-prev {
+            margin-left: 10px;
+        }
+        .arrow-left-prev:before {
+            z-index: 9999;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #D9D9D9;
+            position: absolute;
+            left: 20px;
+            top: 8px;
+        }
+        .arrow-left-prev:after {
+            z-index: 9999;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid #fff;
+            position: absolute;
+            left: 22px;
+            top: 10px;
+        }
+        .arrow-right-next:before {
+            z-index: 9999;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid #D9D9D9;
+            position: absolute;
+            right: 20px;
+            top: 8px;
+        }
+        .arrow-right-next:after {
+            z-index: 9999;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 6px solid #fff;
+            position: absolute;
+            right: 22px;
+            top: 10px;
+        }
+    }
+    .single-page-prev-spec {
+        cursor: pointer;
+        border-color: #4A90E2;
+        color: #4A90E2;
+        .arrow-left-prev:before {
+            border-right: 8px solid #4A90E2;
+        }
+    }
+    .single-page-next-spec {
+        cursor: pointer;
+        border-color: #4A90E2;
+        color: #4A90E2;
+        .arrow-right-next:before {
+            border-left: 8px solid #4A90E2;
+        }
+    }
+}

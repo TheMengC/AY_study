@@ -1,0 +1,21 @@
+
+.mid-coupon-wrapper {
+  position: fixed;
+  bottom: 200rpx;
+  right: 0; }
+  .mid-coupon-wrapper .mid-coupon {
+    display: flex;
+    position: relative; }
+    .mid-coupon-wrapper .mid-coupon .timer {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      position: absolute;
+      left: 14rpx;
+      top: 18rpx;
+      font-size: 28rpx;
+      align-items: center;
+      justify-content: center; }
+    .mid-coupon-wrapper .mid-coupon .img {
+      width: 216rpx;
+      height: 100rpx; }

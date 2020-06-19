@@ -1,0 +1,48 @@
+<template name="rendercountDown">
+    <block><text class="timeinfo">{{timeStr}}</text>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <view class="refund-detail-card">
+        <view class="hd">
+            <view class="frac">
+                <checkbox class="check-box"></checkbox>
+                <view class="card-item2-row"><text class="iconfont iconfont-wangwang"></text>{{trade.buyer_nick}}</view><text class="iconfont iconfont-fuzhi" onTap="copyText" data-e-onTap-so="this" data-e-onTap-a-a="{{anonymousState__temp4}}"></text><text class="hd-tid">退款编号:{{trade.refund.refund_id}}</text><text class="iconfont iconfont-fuzhi" onTap="copyText" data-e-onTap-so="this" data-e-onTap-a-a="{{anonymousState__temp5}}"></text><text class="hd-tid">申请退款时间:{{trade.refund.created}}</text>
+            </view>
+            <view class="frac">
+                <block a:if="{{trade.refund.refund_remind_timeout}}"><text class="hd-time">您还有<template is="rendercountDown" data="{{...anonymousState__temp}}"></template>来处理本次退款!</text>
+                </block>
+                <view class="{{'label ' + REFUND_TABS[trade.refund.status].class}}"><text>{{REFUND_TABS[trade.refund.status].label}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="card grid-cont">
+            <view class="card-item1 grid-item12">
+                <order-card a:for="{{loopArray23}}" a:for-item="order" a:for-index="_anonIdx2" compid="{{order.$compid__43}}"></order-card>
+            </view>
+            <view class="card-item3 grid-item7">
+                <view class="card-item-row"><text class="titles">实付</text>
+                    <view class="payment-content"><text class="content1">￥{{anonymousState__temp2}}<block a:if="{{trade.post_fee > 0}}"><text>(含运费￥{{trade.post_fee}})</text>
+</block>
+</text>
+</view>
+</view>
+<view class="card-item-row"><text class="titles">退款金额</text><text class="num">￥{{trade.refund.refund_fee}}</text>
+</view>
+</view>
+<view class="card-item4 grid-item5">
+    <view class="card-item4-option">
+        <view class="card-btn">处理退款</view>
+        <view class="card-btn" onTap="goRefundDetail" data-e-onTap-so="this" data-e-onTap-a-a="{{trade.refund}}">退款信息</view>
+    </view>
+</view>
+</view>
+<view class="bd-add"><text class="add-title">收货地址</text><text class="add-content"><text>{{anonymousState__temp3}}</text><text class="iconfont iconfont-fuzhi"></text>
+    <block a:if="{{activeTabKey != 'TRADE_FINISHED' && activeTabKey != 'ALL_CLOSED'}}"><text class="add-check" onTap="checkAddress" data-e-onTap-so="this" data-e-onTap-a-a="{{trade}}">核对地址</text>
+    </block>
+    <block a:if="{{activeTabKey == 'WAIT_SELLER_SEND_GOODS'}}"><text class="iconfont iconfont-bianji"></text>
+    </block>
+    </text>
+</view>
+</view>
+</block>

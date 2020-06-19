@@ -1,0 +1,39 @@
+@import "../../../style/index";
+
+.refund-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 10px 20px 0 20px;
+    .refund-empty{
+        margin-top: 10%
+    }
+
+    .trade-show {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 5px 0;
+
+        .next-checkbox-wrapper .next-checkbox-label {
+            margin-left: 5px;
+        }
+    }
+
+    .trade-select {
+        margin: 12px 0;
+        align-self: flex-end;
+    }
+    .next-select .next-select-inner {
+        width: 189px;
+        height: 25px;
+        background: rgba(255,255,255,1);
+        border: none;
+        border-radius: 2px;
+    }
+    .next-input.next-medium .next-input-text-field {
+        color: $AyBlue;
+    }
+}

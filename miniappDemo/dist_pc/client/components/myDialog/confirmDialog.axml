@@ -1,0 +1,3 @@
+<block a:if="{{$taroCompReady}}">
+    <my-dialog compid="{{$compid__40}}"></my-dialog>
+</block>

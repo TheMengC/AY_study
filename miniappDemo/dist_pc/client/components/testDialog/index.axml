@@ -1,0 +1,9 @@
+<block a:if="{{$taroCompReady}}">
+    <at-modal compid="{{$compid__39}}">
+        <at-modal-header>哈哈哈</at-modal-header>
+        <at-modal-content>{{text}}</at-modal-content>
+        <at-modal-action>
+            <button onTap="onClose">关闭</button>
+        </at-modal-action>
+    </at-modal>
+</block>

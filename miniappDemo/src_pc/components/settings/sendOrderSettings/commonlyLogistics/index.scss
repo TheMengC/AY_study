@@ -1,0 +1,89 @@
+.commonly-logistics-page {
+    padding-top: 20px;
+
+    .head-tabs {
+        display: flex;
+        color: #8C8C8C;
+        font-size: 14px;
+        font-weight: 400;
+
+        .tab {
+            padding: 12px 18px;
+            background: #F7F8FA;
+            border: 1px solid #D7DBE0;
+            border-top: 4px solid #F7F8FA !important;
+            margin-right: 6px;
+        }
+
+        .tab-selected {
+            background: #FFFFFF;
+            border-top: 4px solid #1890FF !important;
+            border-bottom: none;
+        }
+    }
+
+    .main-content {
+        background: #FFFFFF;
+        padding: 20px;
+        border-radius: 0 4px 4px 4px;
+
+        .selected-spans {
+            display: flex;
+
+            .span {
+                padding: 5px 18px;
+                margin-right: 20px;
+                font-size: 15px;
+                border-radius: 4px;
+                font-weight: 400;
+                color: #1890FF;
+                background: #E9F4FF;
+            }
+        }
+
+        .logistics-list {
+            padding-top: 30px;
+
+            .logistics-pinyin-item {
+                display: flex;
+
+                .title {
+                    width: 30px;
+                    height: 18px;
+                    background: #F0F2F5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #333333;
+                    line-height: 20px;
+                }
+
+                .content {
+                    margin-left: 55px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    .span {
+                        margin-bottom: 30px;
+                        display: flex;
+                        align-items: center;
+                        flex: 0 0 20%;
+
+                        .checkbox {
+                            margin-right: 5px;
+                            .next-checkbox-label{
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #232424;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

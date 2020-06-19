@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "empty-page": "../../emptyPage/index",
+    "refund-card": "../refundCard/index"
+  }
+}

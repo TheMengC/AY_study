@@ -1,0 +1,162 @@
+
+.at-tabs {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* elements */
+  /* modifiers */ }
+
+.at-tabs__item {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 24rpx 24rpx;
+  color: #333;
+  font-size: 28rpx;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.at-tabs__item-underline {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1PX;
+  background-color: #6190E8;
+  transform: scaleX(0);
+  transition: all 0.15s; }
+
+.at-tabs__item--active {
+  color: #6190E8; }
+
+.at-tabs__item--active .at-tabs__item-underline {
+  transform: scaleX(1); }
+
+.at-tabs__header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #FFF;
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-none; }
+
+.at-tabs__header::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent; }
+
+.at-tabs__body {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  transition: all 0.3s;
+  will-change: transform, left, top;
+  overflow: visible; }
+
+.at-tabs__underline {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 600%;
+  height: 1PX;
+  background-color: #F0F0F0; }
+
+.at-tabs--scroll .at-tabs__header {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap; }
+
+.at-tabs--scroll .at-tabs__item {
+  display: inline-flex;
+  overflow: visible; }
+
+.at-tabs--vertical {
+  display: flex;
+  flex: 1;
+  overflow: hidden; }
+
+.at-tabs--vertical .at-tabs__body {
+  display: inline-block;
+  flex: 1;
+  height: 100rpx;
+  width: auto; }
+
+.at-tabs--vertical .at-tabs__underline {
+  top: 0;
+  left: 0;
+  bottom: auto;
+  width: 1PX;
+  height: 100%; }
+
+.at-tabs--vertical .at-tabs__header {
+  display: inline-block;
+  width: auto; }
+
+.at-tabs--vertical .at-tabs__item {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  align-items: center; }
+
+.at-tabs--vertical .at-tabs__item-underline {
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: 1PX;
+  height: 100%;
+  transform: scaleY(0); }
+
+.at-tabs--vertical .at-tabs__item--active .at-tabs__item-underline {
+  transform: scaleY(1); }
+
+/* hack SWAN */
+.at-tabs--scroll.at-tabs--horizontal.at-tabs--SWAN .at-tabs__item-underline {
+  bottom: 1PX; }
+
+/* hack SWAN */
+.at-tabs-pane {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: initial;
+  vertical-align: top;
+  /* modifiers */ }
+
+.at-tabs-pane--active {
+  height: auto; }
+
+.at-tabs-pane--inactive {
+  height: 0;
+  overflow: hidden; }
+
+.at-tabs-pane--vertical {
+  display: block;
+  height: 100%;
+  overflow: scroll; }
+
+.at-tabs__dot {
+  z-index: 1;
+  position: absolute;
+  left: 90%;
+  top: -7px;
+  height: 17px;
+  line-height: 17px;
+  padding: 0 4px;
+  background: linear-gradient(360deg, #f37845 0%, #ffa681 100%);
+  border-radius: 100px 100px 100px 50px;
+  border: 1px solid #f4f4f4;
+  color: #fff; }
+
+.at-tabs__title {
+  position: relative; }

@@ -1,0 +1,3 @@
+<block a:if="{{$taroCompReady}}">
+    <pagination total="{{total}}" current="{{pageNo}}" pageSize="{{pageSize}}" shape="normal" showJump="{{false}}" pageSizeSelector="{{onPageSizeChange ? pageSizeSelector : false}}" pageSizePosition="end" pageSizeList="{{pageSizeList}}" onPageSizeChange="anonymousFunc0" onChange="anonymousFunc1"></pagination>
+</block>

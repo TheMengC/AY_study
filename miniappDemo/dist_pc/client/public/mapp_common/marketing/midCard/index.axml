@@ -1,0 +1,15 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp}}">
+        <view class="xufei-container" style="{{_$anonymousState__temp}}">{{}}
+            <view class="xufei-head">{{}}
+                <image src="{{_$anonymousState__temp2}}" class="head-pro-img"></image>{{}}
+                <view class="xufei-head-info head-userInfo"><text class="userInfo-txt"><view class="userInfo-nick">{{_$anonymousState__temp3}}</view><image class="crown" src="https://q.aiyongbao.com/item/web/images/crown-VIP.png"></image></text><text class="userInfo-txt userInfo-desc">{{_$anonymousState__temp4}}</text>
+                </view>
+                <view class="xufei-next-link" onTap="closeAD">下次再说</view>
+            </view>{{}}
+            <block a:if="{{_$anonymousState__temp5}}">
+                <view style="{{hotItem.$loopState__temp7}}" onTap="anonymousFunc0" a:for="{{loopArray15}}" a:for-item="hotItem" a:for-index="__index0" data-e-onTap-so="this" data-e-onTap-a-a="{{hotItem._$indexKey}}"></view>
+            </block>
+        </view>
+    </block>
+</block>

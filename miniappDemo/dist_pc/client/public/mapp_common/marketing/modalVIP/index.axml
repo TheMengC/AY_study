@@ -1,0 +1,37 @@
+<template name="renderBtns">
+    <block>
+        <block a:if="{{anonymousState__temp5}}">
+            <view></view>
+        </block>
+        <button style="{{item.$loopState__temp2}}" onTap="anonymousFunc0" size="mini" type="default" a:for="{{loopArray13}}" a:for-item="item" a:for-index="__index0" a:else data-e-onTap-so="this" data-e-onTap-a-a="{{item._$indexKey}}">{{body['btn' + item.$original + '-text']}}</button>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block>
+        <block a:if="{{anonymousState__temp4}}">
+            <block a:if="{{showAutoPayDialog}}">
+                <view class="modal-ad-wrapper modal-vip-wrapper auto-pay">
+                    <image src="//q.aiyongbao.com/trade/web/images/qap_img/pc/auto_renew_dialog.png" class="auto-pay-img"></image>
+                    <view class="btn-group">
+                        <view onTap="clickAutoPayBtn" class="auto-pay-btn no-auto" data-e-onTap-so="this" data-e-onTap-a-a="{{0}}">不了谢谢</view>
+                        <view onTap="clickAutoPayBtn" class="auto-pay-btn learn-more" data-e-onTap-so="this" data-e-onTap-a-a="{{1}}">点击了解</view>
+                    </view>
+                </view>
+            </block>
+            <block a:else>
+                <view class="modal-ad-wrapper modal-vip-wrapper">
+                    <image src="http://q.aiyongbao.com/yunying/yunying/activeimg/topshuff.png" class="swipper-banner"></image>
+                    <swiper class="test-h" indicator-color="rgba(255,255,255,0.6)" indicator-active-color="#fff" indicator-dots="{{true}}" current="{{current}}" previous-margin="60rpx" next-margin="60rpx" onChange="anonymousFunc1">
+                        <swiper-item a:key="pid" a:for="{{ad.adInfo}}" a:for-item="item" a:for-index="_anonIdx2">
+                            <image src="{{item.adData.img_path}}" class="swiper-image"></image>
+                        </swiper-item>
+                    </swiper>
+                    <view class="swipper-btns">
+                        <template is="renderBtns" data="{{..._$_$anonymousState__temp}}"></template>
+                    </view>
+                    <image src="" class="closer" onTap="closeAD"></image>
+                </view>
+            </block>
+        </block>
+    </block>
+</block>

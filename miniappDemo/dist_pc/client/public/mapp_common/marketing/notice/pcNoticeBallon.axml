@@ -1,0 +1,15 @@
+<block a:if="{{$taroCompReady}}">
+    <view>
+        <view onTap="hideBallon">公告</view>
+        <block a:if="{{showNotice}}">
+            <view class="pc-notice-ballon">
+                <view class="ballon-header"><text class="ballon-header-text">公告</text>
+                    <block a:if="{{!hadShown}}">
+                        <view class="ballon-hide" onTap="hideBallon">收起</view>
+                    </block>
+                </view>
+                <view class="ballon-content" onTap="anonymousFunc0">{{notice.content}}</view>
+            </view>
+        </block>
+    </view>
+</block>

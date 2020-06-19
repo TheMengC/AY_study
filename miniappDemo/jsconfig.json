@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "components/*":  ["./src/components"],
+      "pages/*":  ["./src/pages"],
+      "tradePublic/*": ["./public/tradePublic"],
+      "tradePolyfills/*": ["./public/tradePolyfills"],
+      "mapp_common/*": ["./public/mapp_common"],
+      "@/constants/*": ["./src/constants"]
+    }
+  }
+}

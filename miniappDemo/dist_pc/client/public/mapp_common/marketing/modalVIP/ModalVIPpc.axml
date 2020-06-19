@@ -1,0 +1,41 @@
+<template name="renderBtns">
+    <block>
+        <block a:if="{{!item.$loopState__temp10}}" a:for="{{loopArray11}}" a:for-item="item" a:for-index="__index0">
+            <view class="ad-buy-btn" style="{{item.$loopState__temp2}}" onTap="anonymousFunc0" size="mini" type="default" data-e-onTap-so="this" data-e-onTap-a-a="{{item._$indexKey}}">{{body['btn' + item.$original + '-text']}}</view>
+        </block>
+    </block>
+</template>
+<template name="renderAdImg">
+    <block>
+        <view class="ad-img">
+            <image src="{{img_path}}" style="{{anonymousState__temp3}}"></image>
+        </view>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block>
+        <block a:if="{{anonymousState__temp6}}">
+            <view class="modal-ad-wrapper pc-modal-vip-wrapper">
+                <view class="pc-modal-vip">
+                    <view class="title-bar">
+                        <view>{{titleContent[ENV.app]}}</view>
+                        <view onTap="closeAD">x</view>
+                    </view>
+                    <view class="content">
+                        <view class="menu">
+                            <view class="menu-btn" onTap="changeAd" a:for="{{loopArray12}}" a:for-item="item" a:for-index="index" data-e-onTap-so="this" data-e-onTap-a-a="{{index}}" data-e-onTap-a-b="{{item.$original.pid}}">
+                                <image class="menu-icon" src="{{item.$original.pid == ad.currentPid ? item.$original.imgPath_high : item.$original.imgPath}}"></image><text class="menu-text" style="{{item.$loopState__temp8}}">{{item.$original.title}}</text>
+                            </view>
+                        </view>
+                        <view class="ad-area">
+                            <template is="renderAdImg" data="{{..._$_$anonymousState__temp}}"></template>
+                            <view class="ad-btns">
+                                <template is="renderBtns" data="{{..._$_$anonymousState__temp2}}"></template>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </block>
+</block>

@@ -1,0 +1,40 @@
+// 变量
+$AyBlue: #1890FF;
+
+.tab-con {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.trade-tab {
+    //width: 720px;
+    width: auto !important;
+    color: #666666;
+    height: 43px;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: visible;
+    cursor: pointer;
+
+    .at-tabs__item {
+        height: 43px;
+        padding: 0 16px !important;
+        border-bottom:1.5px solid rgb(216, 216, 216);
+        box-sizing: border-box;
+        color: #666;
+        font-size: 14px;
+        background-color: #F0F2F5;
+    }
+    .at-tabs__item-underline {
+        height: 2px;
+        bottom: 0px;
+        background-color: $AyBlue;
+    }
+}
+.tab-blank {
+    flex: 1;
+    height: 41px;
+    border-bottom:1.5px solid rgb(216, 216, 216);
+    background-color: #F0F2F5;
+}
+

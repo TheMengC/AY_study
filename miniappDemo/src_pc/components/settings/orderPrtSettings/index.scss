@@ -1,0 +1,28 @@
+.order-prt-settings-content {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    view {
+        font-size: 14px;
+    }
+
+    .order-prt-settings-content-tab {
+        flex: none;
+    }
+
+    .order-prt-settings-content-pane {
+        flex: auto;
+        padding: 20px 0;
+    }
+
+    .button-margin-right {
+        margin-right: 16px;
+    }
+
+    .button-margin-left {
+        margin-left: 16px;
+    }
+}

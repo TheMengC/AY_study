@@ -1,0 +1,16 @@
+@import "~taro-ui/dist/style/components/modal.scss";
+
+.index {
+  flex-direction: column;
+  width: 100%;
+}
+
+.dialog-manager {
+  .opened {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,8 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="trade-empty">
+        <image class="trade-empty-img" src="http://q.aiyongbao.com/miniapp/trade/img/mobile/trade_list_empty.webp"></image>
+        <block a:if="{{text}}">
+            <view class="trade-empty-text">{{text}}</view>
+        </block>
+    </view>
+</block>

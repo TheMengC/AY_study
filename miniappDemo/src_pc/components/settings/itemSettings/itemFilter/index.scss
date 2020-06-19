@@ -1,0 +1,25 @@
+.item-filter {
+    display: flex;
+    .select{
+        width: 194px;
+        margin-right: 70px;
+        .next-select-inner{
+            height: 36px !important;
+        }
+    }
+    .input-filter{
+        display: flex;
+        .input{
+            width: 230px;
+            height: 36px;
+            border-radius:4px;
+            border:1px solid #D9D9D9;
+
+            font-size:14px;
+            line-height: 34px;
+            font-weight:400;
+            color:#232424;
+            margin-right: 8px;
+        }
+    }
+}

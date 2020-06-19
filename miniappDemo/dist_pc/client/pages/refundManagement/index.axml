@@ -1,0 +1,20 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="refundmanagement">
+        <scroll-view class="trade-scroll" style="{{anonymousState__temp}}" scroll-y="{{true}}" enable-back-to-top="{{true}}" scroll-top="{{scrollHeight}}">
+            <view class="refund-search">
+                <input placeholder="请输入退款单号或买家昵称" value="{{searchVal}}" onInput="changeSearch" class="input" />
+                <button class="button" onTap="anonymousFunc0"><text class="button-text">搜索</text>
+                </button>
+            </view>
+            <view class="grid-item24 tab-con">
+                <my-tabs compid="{{$compid__21}}"></my-tabs>
+                <view class="tab-blank"></view>
+            </view>
+            <refund-list></refund-list>
+        </scroll-view>
+        <view class="refund-footer">
+            <view></view>
+            <my-pagination compid="{{$compid__22}}"></my-pagination>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,92 @@
+@import "../../style/index";
+.refundmanagement {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    font-size:16px;
+    //margin-bottom:50px;
+    background-color: #F0F2F5;
+    .refund-search{
+        height: 64px;
+        box-shadow: 0px 2px 12px 0px rgba(204,204,204,0.2);
+        border-radius: 4px;
+        margin: 20px 20px 9px 20px;
+        background-color: #fff;
+        display: flex;
+        align-items:center;
+    }
+    .input{
+        margin-left: 20px;
+        width:230px;
+        height:36px;
+        background:rgba(255,255,255,1);
+        border-radius:4px;
+        border:1px solid rgba(217,217,217,1);
+        font-size: 14px;
+    }
+    .button{
+        width:92px;
+        height:36px;
+        background:rgba(24,144,255,1);
+        border-radius:4px;
+        margin-left: 20px;
+        line-height:36px;
+        .button-text{
+            font-size:14px;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+
+        }
+    }
+    .tab-con {
+        flex-shrink: 0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        .at-tabs--scroll .at-tabs__header {
+            overflow: visible !important;
+        }
+    }
+    .trade-scroll {
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .custom-tab {
+            width: 920px !important;
+        }
+    }
+
+    .side-tab {
+        width: 170px;
+        background-color: #fff;
+    }
+    .refund-footer{
+        flex-shrink: 0;
+        box-shadow:rgba(0, 0, 0, 0.08) 2px 0px 3px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 20px 0 22px;
+        font-size: 14px;
+        background-color: #FFFFFF;
+        //position: fixed;
+        //bottom: 0;
+        //left: 0;
+        //right: 0;
+        //display: flex;
+        //align-items: center;
+        //justify-content: space-between;
+        //height: 50px;
+        //padding: 0 20px 0 22px;
+        //font-size: 14px;
+        //background-color: #FFFFFF;
+        //margin-left: 170px;
+        //box-shadow:rgba(0, 0, 0, 0.08) 2px 0px 3px 0px;
+    }
+}

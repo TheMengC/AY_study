@@ -1,0 +1,197 @@
+.reward-card-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index:900;
+    .reward-card{
+        position: relative;
+        flex-direction:column;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        width: 540rpx;
+        height: 822rpx;
+        .bg-img {
+            width: 100%;
+            height: 100%;
+
+        }
+        .close-img {
+            width: 44rpx;
+            height: 44rpx;
+            position: absolute;
+            top: 114rpx;
+            right: 52rpx;
+        }
+        .card-content{
+            position: absolute;
+            justify-content: space-between;
+            flex-direction:column;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: 132rpx;
+            padding-bottom: 54rpx;
+            .reward-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 56rpx;
+                .text{
+                    height:56rpx;
+                    font-size:40rpx;
+                    font-family:PingFangSC-Semibold,PingFang SC;
+                    font-weight:600;
+                    color:rgba(255,255,255,1);
+                    line-height:56rpx;
+                    margin-bottom: 2rpx;
+                }
+                .tips {
+                    height:48rpx;
+                    font-size:30rpx;
+                    font-family:PingFangSC-Semibold,PingFang SC;
+                    font-weight:600;
+                    color:rgba(255,255,255,1);
+                    line-height:42rpx;
+                    text-shadow:0rpx 2rpx 0rpx rgba(208,13,17,1);
+                    .tips-number {
+                        color: #FEB103;
+                    }
+                }
+            }
+            .reward-mid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .mid-icon {
+                    width: 226rpx;
+                    height: 164rpx;
+                    margin-bottom: 28rpx;
+                }
+                .mid-text {
+                    height:42rpx;
+                    font-size:30rpx;
+                    font-family:PingFangSC-Semibold,PingFang SC;
+                    font-weight:600;
+                    color:rgba(51,51,51,1);
+                    line-height:42rpx;
+                    margin-bottom: 10rpx;
+                    .vipdays {
+                        color: #FD5429;
+                        margin-left: 12rpx;
+                    }
+                }
+                .mid-tips {
+                    height:42rpx;
+                    font-size:30rpx;
+                    font-family:PingFangSC-Regular,PingFang SC;
+                    font-weight:400;
+                    color:rgba(156,156,156,1);
+                    line-height:42rpx;
+                    margin-bottom: 88rpx;
+                }
+                .mid-part{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: start;
+                    height: 185rpx;
+                    .mid-icon2 {
+                        width: 116rpx;
+                        height: 116rpx;
+                        margin-right: 22rpx;
+                    }
+                    .part-text {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .part-tips {
+                        height:42rpx;
+                        font-size:30rpx;
+                        font-family:PingFangSC-Regular,PingFang SC;
+                        font-weight:400;
+                        color:rgba(156,156,156,1);
+                        line-height:42rpx;
+                        margin-top: 4rpx;
+                    }
+                }
+                .endday-tips {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 84rpx;
+                    margin-bottom: 68rpx;
+                    .tips-content {
+                        height:84rpx;
+                        font-size:30rpx;
+                        font-family:PingFangSC-Regular,PingFang SC;
+                        font-weight:400;
+                        color:rgba(156,156,156,1);
+                        line-height:42rpx;
+                    }
+                }
+            }
+            .reward-bottom {
+                position: relative;
+                .btn-img {
+                    width:466rpx;
+                    height:90rpx;
+                }
+                .btn-text {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .content {
+                        height:44rpx;
+                        font-size:32rpx;
+                        font-family:PingFangSC-Medium,PingFang SC;
+                        font-weight:500;
+                        color:rgba(155,92,0,1);
+                        line-height:44rpx;
+                    }
+                }
+            }
+        }
+        .card-close {
+            background-color: #FFF;
+            border-color: #FFF;
+            color: #000;
+            font-size: 32rpx;
+            border-radius: 8rpx;
+            width: 50vw;
+            padding: 5rpx 0;
+            margin-top: 10rpx;
+        }
+        .modal-ad-closer{
+            color: rgba(256,256,256,0.8);
+            margin-top: 8px;
+        }
+    }
+    .endDay {
+        height: 912rpx;
+        .reward-top {
+            margin-top: 85rpx;
+        }
+        .close-img {
+            width: 44rpx;
+            height: 44rpx;
+            position: absolute;
+            top: 162rpx;
+            right: 46rpx;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-tabs": "../../public/mapp_common/components/myTab/index",
+    "order-list": "../../components/orderManagement/orderList/index"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "marketing": "../../public/mapp_common/marketing/index",
+    "notice-ballon": "../../public/mapp_common/marketing/notice/pcNoticeBallon",
+    "refund-management": "../refundManagement/index",
+    "order-management": "../orderManagement/index",
+    "test": "../test/index",
+    "dialog-manager": "../../components/dialogManager/index",
+    "router-view": "../../components/miniapp-router/router-view/router-view"
+  },
+  "defaultTitle": "首页"
+}

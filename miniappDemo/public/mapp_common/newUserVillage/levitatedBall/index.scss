@@ -1,0 +1,30 @@
+.levitated-container {
+    position: fixed;
+    bottom: 200rpx;
+    left: 21rpx;
+    width: 118rpx;
+    height: 118rpx;
+    z-index: 100;
+    .levitated-ball {
+        width:  118rpx;
+        height: 118rpx;
+    }
+    .ball-text {
+        position: absolute;
+        bottom: 10rpx;
+        left: 8rpx;
+        color: thistle;
+        width:100rpx;
+        height:24rpx;
+        font-size:18rpx;
+        color:rgba(255,255,255,1);
+        line-height:24rpx;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+
+

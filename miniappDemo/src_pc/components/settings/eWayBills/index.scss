@@ -1,0 +1,21 @@
+.e-invoice-page {
+    font-size: 14px;
+    .e-invoice-page-hints {
+        height:40px;
+        background:rgba(230,247,255,1);
+        border:1px solid rgba(145,213,255,1);
+        line-height:40px;
+        padding-left: 16px;
+        margin: 20px;
+        .e-invoice-page-hints-text {
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(89,89,89,1);
+            margin-left: 5px;
+            .text-point {
+                color: #FF4400;
+                cursor: pointer;
+            }
+        }
+    }
+}

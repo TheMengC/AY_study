@@ -1,0 +1,16 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="goods-list">
+        <view class="goods-image">
+            <image class="image" src="{{order.pic_path}}"></image>
+        </view>
+        <view class="goods-name">
+            <view class="goods-text">
+                <view class="goods-title">{{order.title}}</view>
+                <view class="goods-shot">设置简称</view>
+            </view>
+            <view class="goods-price">￥{{order.price}}
+                <view class="goods-num">X{{order.num}}</view>
+            </view>
+        </view>
+    </view>
+</block>

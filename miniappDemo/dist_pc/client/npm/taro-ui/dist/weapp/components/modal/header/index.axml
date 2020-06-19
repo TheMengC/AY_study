@@ -1,0 +1,5 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="{{rootClass}}">
+        <slot></slot>
+    </view>
+</block>

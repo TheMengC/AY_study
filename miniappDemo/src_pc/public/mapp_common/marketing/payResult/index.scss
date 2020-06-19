@@ -1,0 +1,57 @@
+.pay-result-wrapper{
+  .at-modal__header{
+    text-align: left;
+    .closer{
+      position: absolute;
+      top: 18rpx;
+      right: 18rpx;
+    }
+
+    &.payFail-header,&.paySuccess-header,&.renewFail-header,&.renewSuccess-header{
+      text-align: center;
+
+      .header-title{
+        font-size: 48rpx;
+        color: #C90018;
+      }
+
+      .closer{
+        top: 28rpx;
+      }
+    }
+
+    &.paySuccess-header .header-title,&.renewSuccess-header .header-title{
+      color: #3089DC
+    }
+  }
+
+  .at-modal__content{
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+
+    .text-row{
+      line-height: 38rpx;
+      margin: 12rpx 0;
+    }
+
+    .paySuccess-img{
+      width: 444rpx;
+      height: 306rpx;
+      align-self: center;
+      margin-top: 12rpx;
+    }
+  }
+
+  .at-modal__footer{
+    .at-modal__action{
+      .leftBtn{
+        color: #666;
+      }
+      .rightBtn{
+        background-color: #3089DC;
+        color: white !important;
+      }
+    }
+  }
+}

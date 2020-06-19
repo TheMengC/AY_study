@@ -1,0 +1,44 @@
+.item-short-title-page{
+    background: #FFFFFF;
+    margin-top: 20px;
+    .switch-panel{
+        padding: 14px 20px;
+        border-bottom: 1px solid #E9E9E9;
+
+        font-size:14px;
+        font-weight:400;
+        color:#232424;
+
+        .title, .check-box {
+            vertical-align: middle;
+        }
+
+        .title{
+            margin-right: 46px;
+        }
+
+        .check-box{
+            margin-right: 20px;
+        }
+    }
+    .head-button-panel {
+        padding: 16px 20px 16px 20px !important;
+    }
+    .next-input.next-focus{
+        border: 1px solid #1890FF !important;
+    }
+    .bottom-panel {
+        .bottom-panel-view {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 220px;
+        }
+        background-color: #fff;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0;
+        left: 180px;
+        width: 100%;
+        box-shadow: 10px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}

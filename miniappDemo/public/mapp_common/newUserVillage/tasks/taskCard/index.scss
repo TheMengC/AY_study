@@ -1,0 +1,82 @@
+.task-card-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index:1000;
+    .task-card{
+        position: relative;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction:column;
+        border-radius: 22rpx;
+        width:540rpx;
+        height:556rpx;
+        background:rgba(255,255,255,1);
+        box-sizing: border-box;
+        padding: 0rpx 36rpx 40rpx 36rpx ;
+        .reward-img {
+            width: 540rpx;
+            height: 260rpx;
+        }
+        .reward-content {
+            width:396rpx;
+            height:48rpx;
+            font-size:34rpx;
+            font-family:PingFangSC-Semibold,PingFang SC;
+            font-weight:600;
+            color:rgba(51,51,51,1);
+            line-height:48rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 36rpx;
+            .reward-name {
+                margin-left: 10rpx;
+                color: #FD5429;
+            }
+        }
+        .reward-tips {
+            width:360rpx;
+            height:42rpx;
+            font-size:30rpx;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(156,156,156,1);
+            line-height:42rpx;
+            margin: 12rpx auto 30rpx auto;
+        }
+        .reward-btn {
+            width:466rpx;
+            height:90rpx;
+            background:linear-gradient(180deg,rgba(255,178,83,1) 0%,rgba(253,122,41,1) 100%);
+            box-shadow:0rpx 4rpx 8rpx 0rpx rgba(250,123,43,0.4);
+            border-radius:16rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .reward-btn-text {
+                //width:128rpx;
+                height:44rpx;
+                font-size:32rpx;
+                font-family:PingFangSC-Medium,PingFang SC;
+                font-weight:500;
+                color:rgba(255,255,255,1);
+                line-height:44rpx;
+            }
+        }
+        .task-card-close {
+            position: absolute;
+            top: 22rpx;
+            right: 22rpx;
+            width: 44rpx;
+            height: 44rpx;
+        }
+    }
+}

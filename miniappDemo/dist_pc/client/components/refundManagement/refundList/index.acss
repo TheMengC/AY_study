@@ -1,0 +1,60 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.refund-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px 20px 0 20px; }
+  .refund-list .refund-empty {
+    margin-top: 10%; }
+  .refund-list .trade-show {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5px 0; }
+    .refund-list .trade-show .next-checkbox-wrapper .next-checkbox-label {
+      margin-left: 5px; }
+  .refund-list .trade-select {
+    margin: 12px 0;
+    align-self: flex-end; }
+  .refund-list .next-select .next-select-inner {
+    width: 189px;
+    height: 25px;
+    background: white;
+    border: none;
+    border-radius: 2px; }
+  .refund-list .next-input.next-medium .next-input-text-field {
+    color: #1890FF; }

@@ -1,0 +1,49 @@
+<template name="renderDiscountMsg">
+    <block>
+        <block a:if="{{anonymousState__temp4}}">
+            <view></view>
+        </block>
+        <view class="order-price" a:else>
+            <view class="order-price-cont"><text><text class="order-payment">¥{{order.price}}</text><text class="order-num">x{{order.num}}</text></text>
+                <view class="order-fee">
+                    <block a:if="{{discount_fee != 0}}">
+                        <view class="order-discount"><text class="iconfont iconfont-hui"></text><text>{{discount_fee > 0 ? '-' : '+'}}￥{{anonymousState__temp}}</text>
+                        </view>
+                    </block>
+                    <block a:if="{{adjust_fee != 0}}">
+                        <view class="order-adjust"><text class="iconfont iconfont-gai"></text><text>{{adjust_fee > 0 ? '+' : '-'}}￥{{anonymousState__temp2}}</text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <view class="refund-order-card">
+        <view class="order-img">
+            <image style="width:60px;height:60px;" src="{{order.pic_path + '_60x60.jpg'}}"></image>
+        </view>
+        <view class="order-content">
+            <view class="order-title"><text>{{order.title}}</text>
+            </view>
+            <block>
+                <block a:if="{{anonymousState__temp5}}">
+                    <view class="order-code"><text class="code-title">商家编码</text><text class="code-info">{{order.outer_sku_id}}</text>
+                    </view>
+                </block>
+                <block a:else>
+                    <block a:if="{{anonymousState__temp6}}">
+                        <view class="order-code"><text class="code-title">商家编码</text><text class="code-info">{{order.outer_iid}}</text>
+                        </view>
+                    </block>
+                </block>
+            </block>
+            <block a:if="{{order.sku_properties_values}}">
+                <view class="order-sku"><text class="order-sku-item" a:for="{{order.sku_properties_values}}" a:for-item="item" a:for-index="_anonIdx2">{{item}}</text>
+                </view>
+            </block>
+            <template is="renderDiscountMsg" data="{{...anonymousState__temp3}}"></template>
+        </view>
+    </view>
+</block>

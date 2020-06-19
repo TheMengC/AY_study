@@ -1,0 +1,54 @@
+.reward-mask-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index:900;
+    .rules-card{
+        position: relative;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction:column;
+        border-radius: 22rpx;
+        width:540rpx;
+        height:482rpx;
+        background:rgba(255,255,255,1);
+        box-sizing: border-box;
+        padding: 60rpx 40rpx ;
+        .rules-title {
+            width:72rpx;
+            height:50rpx;
+            font-size:36rpx;
+            font-family:PingFangSC-Semibold,PingFang SC;
+            font-weight:600;
+            color:rgba(51,51,51,1);
+            line-height:50rpx;
+        }
+        .rules-content {
+            display: flex;
+            flex-direction: column;
+            .rules-text {
+                width:460rpx;
+                font-size:30rpx;
+                font-family:PingFangSC-Regular,PingFang SC;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                line-height:42rpx;
+                margin-top: 20rpx;
+            }
+        }
+        .task-card-close {
+            position: absolute;
+            top: 22rpx;
+            right: 22rpx;
+            width: 44rpx;
+            height: 44rpx;
+        }
+    }
+}

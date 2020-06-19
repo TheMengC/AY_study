@@ -1,0 +1,32 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="{{rootCls}}" style="{{anonymousState__temp}}">
+        <block>
+            <block a:if="{{scroll}}">
+                <scroll-view id="{{_tabId}}" class="at-tabs__header" style="{{anonymousState__temp2}}" scroll-x="{{scrollX}}" scroll-y="{{scrollY}}" scroll-top="{{_scrollTop}}" scroll-into-view="{{_scrollIntoView}}">
+                    <view class="{{item.itemCls}}" id="{{'tab' + item.$original.key}}" a:key="$original.title" onTap="handleClick" a:for="{{loopArray20}}" a:for-item="item" a:for-index="_anonIdx2" data-e-onTap-so="this" data-e-onTap-a-a="{{item.$original.key}}">
+                        <view class="at-tabs__title">
+                            <block a:if="{{dotNum[item.$original.key] > 0}}">
+                                <view class="at-tabs__dot">{{dotNum[item.$original.key]}}</view>
+                            </block>{{item.$original.title}}</view>
+                        <view class="at-tabs__item-underline"></view>
+                    </view>
+                </scroll-view>
+            </block>
+            <block a:else>
+                <view id="{{_tabId}}" class="at-tabs__header">
+                    <view class="{{item.itemCls}}" id="{{'tab' + item.$original.key}}" a:key="$original.title" onTap="handleClick" a:for="{{loopArray20}}" a:for-item="item" a:for-index="_anonIdx2" data-e-onTap-so="this" data-e-onTap-a-a="{{item.$original.key}}">
+                        <view class="at-tabs__title">
+                            <block a:if="{{dotNum[item.$original.key] > 0}}">
+                                <view class="at-tabs__dot">{{dotNum[item.$original.key]}}</view>
+                            </block>{{item.$original.title}}</view>
+                        <view class="at-tabs__item-underline"></view>
+                    </view>
+                </view>
+            </block>
+        </block>
+        <view class="at-tabs__body" onTouchStart="handleTouchStart" onTouchEnd="handleTouchEnd" onTouchMove="handleTouchMove" style="{{anonymousState__temp3}}" data-e-onTouchStart-so="this" data-e-onTouchEnd-so="this" data-e-onTouchMove-so="this">
+            <view class="at-tabs__underline" style="{{anonymousState__temp4}}"></view>
+            <slot></slot>
+        </view>
+    </view>
+</block>

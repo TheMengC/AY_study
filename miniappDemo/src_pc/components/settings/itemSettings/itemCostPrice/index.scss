@@ -1,0 +1,18 @@
+.item-cost-price-page {
+    margin-top: 20px;
+    .bottom-panel {
+        .bottom-panel-view {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-right: 220px;
+        }
+        background-color: #fff;
+        padding: 10px 20px !important;
+        position: absolute;
+        bottom: 0;
+        left: 180px;
+        width: 100%;
+        box-shadow: 10px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}

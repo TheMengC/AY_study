@@ -1,0 +1,142 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.refund-order-card {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 10px 20px 0 10px; }
+  .refund-order-card:first-child {
+    padding-top: 0; }
+  .refund-order-card:last-child {
+    padding-bottom: 0; }
+  .refund-order-card .order-img {
+    position: relative;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; }
+  .refund-order-card .order-label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center; }
+  .refund-order-card .order-content {
+    flex: 1; }
+  .refund-order-card .order-title {
+    margin-bottom: 5px; }
+  .refund-order-card .order-code {
+    margin-bottom: 5px;
+    color: #999999; }
+  .refund-order-card .code-title {
+    margin-right: 5px; }
+  .refund-order-card .order-sku {
+    display: flex;
+    flex-wrap: wrap; }
+  .refund-order-card .order-sku-item {
+    height: 19px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    padding: 0 8px;
+    color: #1890FF;
+    word-break: keep-all;
+    background: #e4f0fd;
+    border-radius: 2px; }
+  .refund-order-card .order-price .order-price-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; }
+  .refund-order-card .order-price .order-num {
+    height: 20px;
+    margin-left: 5px;
+    padding: 0 8px;
+    background: rgba(243, 120, 69, 0.1);
+    border-radius: 2px;
+    font-weight: 700;
+    color: #f37845;
+    line-height: 20px; }
+  .refund-order-card .order-price .order-fee {
+    display: flex; }
+  .refund-order-card .order-price .iconfont-hui, .refund-order-card .order-price .iconfont-gai {
+    margin-right: 5px;
+    font-size: 14px; }
+  .refund-order-card .order-price .iconfont-hui {
+    color: #FF8400; }
+  .refund-order-card .order-price .iconfont-gai {
+    color: #00BE92; }
+  .refund-order-card .order-price .diamonds {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff; }
+  .refund-order-card .order-price .order-discount, .refund-order-card .order-price .order-adjust {
+    display: flex; }
+  .refund-order-card .order-price .order-discount .diamonds {
+    background-color: #FF8400; }
+  .refund-order-card .order-price .order-adjust {
+    margin-left: 5px; }
+    .refund-order-card .order-price .order-adjust .diamonds {
+      background-color: #00BE92; }
+  .refund-order-card .refund-msg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: rgba(255, 97, 97, 0.1);
+    border-radius: 4px;
+    color: #F37845; }
+  .refund-order-card .refund-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 66px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 17px;
+    border: 1px solid #f37845;
+    cursor: pointer; }
+
+.trade-detail-card .order-card:last-child .order-content {
+  border: unset; }

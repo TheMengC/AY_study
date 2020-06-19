@@ -1,0 +1,67 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.goods-list {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #e6e6e6;
+  position: relative; }
+  .goods-list .goods-image {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%); }
+    .goods-list .goods-image .image {
+      width: 100%;
+      height: 100%; }
+  .goods-list .goods-name .goods-text {
+    margin-top: 30px;
+    height: 10px;
+    margin-left: 80px;
+    color: #3089dc;
+    position: relative; }
+    .goods-list .goods-name .goods-text .goods-title {
+      position: absolute;
+      left: 0; }
+    .goods-list .goods-name .goods-text .goods-shot {
+      position: absolute;
+      right: 10px; }
+  .goods-list .goods-name .goods-price {
+    margin-top: 10px;
+    margin-left: 80px; }
+    .goods-list .goods-name .goods-price .goods-num {
+      display: inline-block;
+      margin-left: 3px;
+      color: #f40; }

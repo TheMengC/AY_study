@@ -1,0 +1,41 @@
+.pc-notice-ballon {
+  border: 1px solid #3089DC;
+  border-radius: 8px;
+  padding: 0 0 0 0;
+  width: 280px;
+  font-size: 12px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  .ballon-header{
+    background-color: #3089DC;
+    height: 48px;
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    .ballon-header-text{
+      font-size: 16px;
+    }
+    .ballon-hide{
+      position: absolute;
+      right: 12px;
+
+    }
+  }
+  .ballon-content{
+    padding: 12px;
+  }
+  &:before{
+    content: '';
+    border: 20px solid transparent;
+    border-bottom-color: #3089DC;
+    position: absolute;
+    top: -40px;
+    left: 60px;
+  }
+}

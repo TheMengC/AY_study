@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "test-dialog": "../testDialog/index",
+    "confirm-dialog": "../myDialog/confirmDialog",
+    "input-dialog": "../myDialog/InputDialog"
+  }
+}

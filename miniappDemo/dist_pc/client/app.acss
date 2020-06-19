@@ -1,0 +1,655 @@
+
+@charset "UTF-8";
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: PingFang SC, 微软雅黑;
+  -webkit-user-select: text !important;
+          user-select: text !important; }
+
+page {
+  background-color: #F0F2F5; }
+
+.grid-cont, .grid-gap-cont {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  padding-right: -10px; }
+
+.grid-gap-cont {
+  grid-column-gap: 10px; }
+
+.grid-item1 {
+  grid-column-start: span 1; }
+
+.grid-item2 {
+  grid-column-start: span 2; }
+
+.grid-item3 {
+  grid-column-start: span 3; }
+
+.grid-item4 {
+  grid-column-start: span 4; }
+
+.grid-item5 {
+  grid-column-start: span 5; }
+
+.grid-item6 {
+  grid-column-start: span 6; }
+
+.grid-item7 {
+  grid-column-start: span 7; }
+
+.grid-item8 {
+  grid-column-start: span 8; }
+
+.grid-item9 {
+  grid-column-start: span 9; }
+
+.grid-item10 {
+  grid-column-start: span 10; }
+
+.grid-item11 {
+  grid-column-start: span 11; }
+
+.grid-item12 {
+  grid-column-start: span 12; }
+
+.grid-item13 {
+  grid-column-start: span 13; }
+
+.grid-item14 {
+  grid-column-start: span 14; }
+
+.grid-item15 {
+  grid-column-start: span 15; }
+
+.grid-item16 {
+  grid-column-start: span 16; }
+
+.grid-item19 {
+  grid-column-start: span 19; }
+
+.grid-item20 {
+  grid-column-start: span 20; }
+
+.grid-item21 {
+  grid-column-start: span 21; }
+
+.grid-item22 {
+  grid-column-start: span 22; }
+
+.grid-item24 {
+  grid-column-start: span 24; }
+
+.trade-btn-small-primary {
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #1890FF;
+  color: #FFFFFF;
+  border: 1px solid #1890FF; }
+
+.trade-btn-small-normal {
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #FFFFFF;
+  color: #595959;
+  border: 1px solid #D9D9D9; }
+
+.trade-btn-small-empty {
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #FFFFFF;
+  color: #1890FF;
+  border: 1px solid #1890FF; }
+
+.trade-btn-left {
+  margin-right: 14px; }
+
+.next-radio-wrapper {
+  display: inline-flex;
+  align-items: center; }
+
+.next-radio-wrapper .next-radio-inner, .next-radio-wrapper .next-radio input[type="radio"] {
+  width: 18px;
+  height: 18px; }
+
+.next-radio-wrapper.checked .next-radio-inner:after {
+  width: 12px;
+  height: 12px; }
+
+.next-radio-wrapper .next-radio-inner:after {
+  top: 3px;
+  left: 3px;
+  margin-top: 0;
+  margin-left: 0; }
+
+.at-tabs__item--active {
+  color: #6190E8 !important; }
+
+.next-input.next-medium {
+  height: 36px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center; }
+
+.next-menu-item {
+  color: #595959; }
+
+.next-input {
+  border: 1px solid #d9d9d9; }
+
+.next-input.next-medium .next-input-text-field {
+  padding: 0 10px;
+  font-size: 12px; }
+
+.next-input.next-medium .next-icon:before {
+  width: 14px;
+  height: 14px;
+  font-size: 14px; }
+
+.next-input.next-medium .next-input-control {
+  padding-right: 12px; }
+
+.next-input.next-input-textarea {
+  padding: 4px 2px;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.next-input.next-focus {
+  border-color: #1890FF; }
+
+.next-btn.next-medium {
+  height: 32px;
+  padding: 0 18px;
+  border-radius: 4px; }
+
+.next-btn.next-btn-normal, .next-btn.next-btn-normal:link, .next-btn.next-btn-normal:visited, .next-btn.next-btn-normal.visite {
+  background: white;
+  color: #595959; }
+
+.next-switch-on {
+  background: linear-gradient(270deg, #5ebef0 0%, #1890ff 100%) !important; }
+
+.next-switch-medium {
+  width: 44px;
+  height: 22px; }
+
+.next-switch-medium:after {
+  width: 20px;
+  height: 20px; }
+
+.next-switch-off {
+  background: #F2F2F2 !important; }
+
+.next-input.next-large {
+  border-radius: 4px; }
+
+.next-checkbox-wrapper {
+  display: inline-flex;
+  font-size: 18px; }
+  .next-checkbox-wrapper.disabled.checked .next-checkbox .next-checkbox-inner {
+    border-color: #DDDDDD !important;
+    background-color: #DDDDDD !important; }
+  .next-checkbox-wrapper.checked .next-checkbox .next-checkbox-inner {
+    background-color: #1890FF !important;
+    border-color: #1890FF !important; }
+    .next-checkbox-wrapper.checked .next-checkbox .next-checkbox-inner .next-icon {
+      color: #FFFFFF !important; }
+  .next-checkbox-wrapper .next-checkbox .next-checkbox-inner {
+    width: 18px;
+    height: 18px;
+    font-size: 18px; }
+  .next-checkbox-wrapper .next-checkbox-label {
+    margin-left: 10px; }
+  .next-checkbox-wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px; }
+  .next-checkbox-wrapper .next-checkbox-inner > .next-icon {
+    line-height: 18px;
+    margin: 0;
+    transform: scale(0.7) !important; }
+
+.next-btn.blue-br-btn {
+  padding: 0 16px;
+  font-size: 14px;
+  border-color: #1890FF !important;
+  color: #1890FF !important;
+  background-color: #FFFFFF; }
+
+.at-modal__container {
+  border-radius: 4px !important; }
+
+.flex-placeholder {
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.blue-link {
+  cursor: pointer;
+  color: #1890FF; }
+
+.table {
+  display: table;
+  border-collapse: collapse; }
+
+.caption {
+  display: table-caption; }
+
+.colgroup {
+  display: table-column-group; }
+
+.thead {
+  display: table-header-group;
+  background-color: #ebebeb; }
+
+.tfoot {
+  display: table-footer-group; }
+
+.tbody {
+  display: table-row-group; }
+
+.td {
+  display: table-cell;
+  padding: 8px; }
+
+.col {
+  display: table-column; }
+
+.tr {
+  display: table-row; }
+
+.table, .th, .td {
+  border: 1px solid #CCCCCC; }
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  width: unset !important; }
+  .icon-btn text {
+    margin-right: 5px; }
+
+.next-range-picker-trigger {
+  padding-right: 15px; }
+
+
+@font-face {
+    font-family: "iconfont";
+    src: url('https://q.aiyongbao.com/miniapp/trade/assets/pc/iconfont/iconfont_v9.woff') format('woff');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-xuanzhong:before {
+  content: "\e6bf";
+}
+
+.iconfont-gonggao:before {
+  content: "\e6bd";
+}
+
+.iconfont-guanbi:before {
+  content: "\e64d";
+}
+
+.iconfont-fahuoshezhi1:before {
+    content: "\e614";
+}
+
+.iconfont-shangpinshezhi1:before {
+    content: "\e616";
+}
+
+.iconfont-dingdanjianceshezhi1:before {
+    content: "\e617";
+}
+
+.iconfont-xitongbeifen1:before {
+    content: "\e618";
+}
+
+.iconfont-pingjiaguanli:before {
+    content: "\e61a";
+}
+
+.iconfont-piliangpingjia:before {
+    content: "\e61b";
+}
+
+.iconfont-lanjieqingkuang:before {
+    content: "\e61f";
+}
+
+.iconfont-lanjiejilu:before {
+    content: "\e620";
+}
+
+.iconfont-caozuorizhi:before {
+    content: "\e621";
+}
+
+.iconfont-cuifuguanli:before {
+    content: "\e626";
+}
+
+.iconfont-yundanhaofahuo:before {
+    content: "\e627";
+}
+
+.iconfont-tuikuanguanli:before {
+    content: "\e628";
+}
+
+.iconfont-piliangzhuanzhang:before {
+    content: "\e629";
+}
+
+.iconfont-pingjiajilu:before {
+    content: "\e62a";
+}
+
+.iconfont-pingjiashezhi:before {
+    content: "\e62b";
+}
+
+.iconfont-wuliuguanli:before {
+    content: "\e62d";
+}
+
+.iconfont-dingdanguanli:before {
+    content: "\e62e";
+}
+
+.iconfont-ziyoudayin:before {
+    content: "\e630";
+}
+
+.iconfont-dadanfahuo:before {
+    content: "\e638";
+}
+
+.iconfont-dianzimiandan1:before {
+    content: "\e63a";
+}
+
+.iconfont-dayindidan:before {
+    content: "\e63b";
+}
+
+.iconfont-dayinshezhi:before {
+    content: "\e63c";
+}
+
+.iconfont-mobanshezhi:before {
+    content: "\e63f";
+}
+
+.iconfont-dayinrizhi:before {
+    content: "\e640";
+}
+
+.iconfont-sanjiaoxing:before {
+    content: "\e642";
+}
+
+.iconfont-fahuodan:before {
+    content: "\e6ba";
+}
+
+.iconfont-dianzimiandan:before {
+    content: "\e6bb";
+}
+
+.iconfont-kuaididan1:before {
+    content: "\e6bc";
+}
+
+.iconfont-order_comment1:before {
+    content: "\e6b8";
+}
+
+.iconfont-order_comment2:before {
+    content: "\e6b9";
+}
+
+.iconfont-fa:before {
+    content: "\e6af";
+}
+
+.iconfont-da:before {
+    content: "\e6b0";
+}
+
+.iconfont-piao:before {
+    content: "\e6b1";
+}
+
+.iconfont-hua:before {
+    content: "\e6b2";
+}
+
+.iconfont-shi:before {
+    content: "\e6b3";
+}
+
+.iconfont-huo:before {
+    content: "\e6b4";
+}
+
+.iconfont-tui:before {
+    content: "\e6b5";
+}
+
+.iconfont-he:before {
+    content: "\e6b6";
+}
+
+.iconfont-xian:before {
+    content: "\e6b7";
+}
+
+.iconfont-order_huabei:before {
+    content: "\e692";
+}
+
+.iconfont-order_mobile:before {
+    content: "\e6ae";
+}
+
+.iconfont-liuchengwancheng:before {
+    content: "\e6ad";
+}
+
+.iconfont-shengyushijian:before {
+    content: "\e6ab";
+}
+
+.iconfont-liucheng:before {
+    content: "\e6ac";
+}
+
+.iconfont-wangwangcuihaoping:before {
+    content: "\e6aa";
+}
+
+.iconfont-jiantouxia:before {
+    content: "\e6a8";
+}
+
+.iconfont-jiantoushang:before {
+    content: "\e6a9";
+}
+
+.iconfont-yiwancheng:before {
+    content: "\e624";
+}
+
+.iconfont-sanjiaoxingjinggao:before {
+    content: "\e623";
+}
+
+.iconfont-pingjiaduanyu-xinzengduanyu:before {
+    content: "\e622";
+}
+
+.iconfont-zengjia:before {
+    content: "\e613";
+}
+
+.iconfont-bianji:before {
+    content: "\e6a7";
+}
+
+.iconfont-gai:before {
+    content: "\e6a5";
+}
+
+.iconfont-hui:before {
+    content: "\e6a6";
+}
+
+.iconfont-dingdanxiangqing:before {
+    content: "\e697";
+}
+
+.iconfont-fuzhi:before {
+    content: "\e698";
+}
+
+.iconfont-duanxincuifu:before {
+    content: "\e699";
+}
+
+.iconfont-shuaxin:before {
+    content: "\e69a";
+}
+
+.iconfont-beizhuqi:before {
+    content: "\e69b";
+}
+
+.iconfont-heduidingdan:before {
+    content: "\e69c";
+}
+
+.iconfont-shaixuan:before {
+    content: "\e69d";
+}
+
+.iconfont-yanshishouhuo:before {
+    content: "\e69e";
+}
+
+.iconfont-zuzhiTApaidan:before {
+    content: "\e6a0";
+}
+
+.iconfont-wancheng:before {
+    content: "\e6a1";
+}
+
+.iconfont-wangwangcuifu:before {
+    content: "\e6a2";
+}
+
+.iconfont-zhuanzhanggeimaijia:before {
+    content: "\e6a3";
+}
+
+.iconfont-wangwang:before {
+    content: "\e6a4";
+}
+
+.iconfont-zhankaicebianlan:before {
+    content: "\e60e";
+}
+
+.iconfont-gouxuan:before {
+    content: "\e60c";
+}
+
+.iconfont-weigouxuan:before {
+    content: "\e60d";
+}
+
+.iconfont-bangzhu:before {
+    content: "\e60b";
+}
+
+.iconfont-shouqicebianlan:before {
+    content: "\e60a";
+}
+
+.iconfont-xitongbeifen:before {
+    content: "\e609";
+}
+
+.iconfont-dingdanjianceshezhi:before {
+    content: "\e608";
+}
+
+.iconfont-shangpinshezhi:before {
+    content: "\e606";
+}
+
+.iconfont-duanyushezhi:before {
+    content: "\e604";
+}
+
+.iconfont-dayinshezhibeifen:before {
+    content: "\e603";
+}
+
+.iconfont-fahuoshezhi:before {
+    content: "\e602";
+}
+
+.iconfont-hintNotice:before {
+    content: "\e622";
+}
+

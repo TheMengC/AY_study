@@ -1,0 +1,23 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp}}">
+        <view></view>
+    </block>
+    <view class="{{'renew-box-wrapper ' + (closeNow ? 'close-now' : '')}}" a:else>
+        <block>
+            <block a:if="{{midModalState === 'box'}}">
+                <view class="renew-box">
+                    <view class="content">
+                        <view class="{{'renew-img-' + ENV.app}}"></view>
+                        <view class="renew-text">{{box_content}}</view>
+                    </view>
+                    <view class="btns"><text class="{{'dismiss-' + ENV.app}}" onTap="closeModal">我知道了</text>
+                        <view type="secondary" size="small" class="{{ENV.app + 'btn ' + ENV.app + 'btn-normal2 ' + ENV.app + 'btn-solid'}}" onTap="anonymousFunc0">{{box_span}}</view>
+                    </view>
+                </view>
+            </block>
+            <block a:else>
+                <marketing compid="{{$compid__27}}"></marketing>
+            </block>
+        </block>
+    </view>
+</block>

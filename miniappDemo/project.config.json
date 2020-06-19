@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist/client",
+  "projectname": "myapp",
+  "description": "1",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

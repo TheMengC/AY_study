@@ -1,0 +1,69 @@
+<template name="renderMarketing">
+    <block>
+        <block a:if="{{!showAD}}">
+            <view></view>
+        </block>
+        <block a:else>
+            <block a:if="{{type === 'notice'}}">
+                <marketing compid="{{$compid__1}}"></marketing>
+            </block>
+            <block a:elif="{{type === 'banner'}}">
+                <marketing compid="{{$compid__2}}"></marketing>
+            </block>
+            <block a:else>
+                <marketing a:for="{{loopArray0}}" a:for-item="item" a:for-index="_anonIdx2" compid="{{item.$compid__0}}"></marketing>
+            </block>
+        </block>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <view class="index">
+        <view class="nav">
+            <view class="navbar">
+                <view class="logo"><text class="text">爱用交易</text>
+                </view>
+                <view class="{{'item ' + (currentMain == main.path ? 'active' : '')}}" onTap="changeRoute" a:for="{{routes}}" a:for-item="main" a:for-index="_anonIdx4" data-e-onTap-so="this" data-e-onTap-a-a="{{main}}"><text class="text">{{main.name}}</text>
+                </view>
+                <view class="flex-placeholder"></view>
+                <view class="nav-right">
+                    <block a:if="{{haveNotice}}">
+                        <notice-ballon compid="{{$compid__3}}"></notice-ballon>
+                    </block>
+                    <view class="vip-flag" onTap="anonymousFunc0"><text class="vio-role">高级版</text>
+                        <view class="vip-time-wrapper">剩余
+                            <view class="vip-time">1234天</view>
+                        </view>
+                        <button class="buy-button">立即购买</button>
+                    </view>
+                    <view class="contact-staff" onTap="anonymousFunc1"><text class="iconfont iconfont-wangwang"></text><text class="text">联系客服</text>
+                    </view>
+                </view>
+            </view>
+            <view class="container">
+                <view class="{{'sidebar ' + (sidebarMini ? 'mini' : '')}}">
+                    <view class="item" onTap="toggleSideBarMini"><text class="{{'iconfont ' + (sidebarMini ? 'iconfont-shouqicebianlan' : 'iconfont-zhankaicebianlan')}}"></text>
+                    </view>
+                    <view class="{{'item ' + (item.path === currentSub ? 'active' : '')}}" onTap="changeRoute" a:for="{{currentChildren}}" a:for-item="item" a:for-index="_anonIdx6" data-e-onTap-so="this" data-e-onTap-a-a="{{item}}" data-e-onTap-a-b="{{currentRoute}}"><text class="{{'icon iconfont ' + item.icon}}"></text><text class="text">{{item.name}}</text>
+                    </view>
+                </view>
+                <view class="content">
+                    <router-view>
+                        <view slot="tradeList">紧张施工中...</view>
+                        <view slot="refundManagement">
+                            <refund-management></refund-management>
+                        </view>
+                        <view slot="orderManagement">
+                            <order-management></order-management>
+                        </view>
+                        <view slot="test">
+                            <test></test>
+                        </view>
+                    </router-view>
+                </view>
+            </view>
+            <template is="renderMarketing" data="{{...anonymousState__temp}}"></template>
+        </view>
+        <dialog-manager></dialog-manager>
+        <template is="renderMarketing" data="{{...anonymousState__temp2}}"></template>
+    </view>
+</block>

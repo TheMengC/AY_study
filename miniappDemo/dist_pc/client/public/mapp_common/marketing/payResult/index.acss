@@ -1,0 +1,36 @@
+
+.pay-result-wrapper .at-modal__header {
+  text-align: left; }
+  .pay-result-wrapper .at-modal__header .closer {
+    position: absolute;
+    top: 18rpx;
+    right: 18rpx; }
+  .pay-result-wrapper .at-modal__header.payFail-header, .pay-result-wrapper .at-modal__header.paySuccess-header, .pay-result-wrapper .at-modal__header.renewFail-header, .pay-result-wrapper .at-modal__header.renewSuccess-header {
+    text-align: center; }
+    .pay-result-wrapper .at-modal__header.payFail-header .header-title, .pay-result-wrapper .at-modal__header.paySuccess-header .header-title, .pay-result-wrapper .at-modal__header.renewFail-header .header-title, .pay-result-wrapper .at-modal__header.renewSuccess-header .header-title {
+      font-size: 48rpx;
+      color: #C90018; }
+    .pay-result-wrapper .at-modal__header.payFail-header .closer, .pay-result-wrapper .at-modal__header.paySuccess-header .closer, .pay-result-wrapper .at-modal__header.renewFail-header .closer, .pay-result-wrapper .at-modal__header.renewSuccess-header .closer {
+      top: 28rpx; }
+  .pay-result-wrapper .at-modal__header.paySuccess-header .header-title, .pay-result-wrapper .at-modal__header.renewSuccess-header .header-title {
+    color: #3089DC; }
+
+.pay-result-wrapper .at-modal__content {
+  min-height: unset;
+  display: flex;
+  flex-direction: column; }
+  .pay-result-wrapper .at-modal__content .text-row {
+    line-height: 38rpx;
+    margin: 12rpx 0; }
+  .pay-result-wrapper .at-modal__content .paySuccess-img {
+    width: 444rpx;
+    height: 306rpx;
+    align-self: center;
+    margin-top: 12rpx; }
+
+.pay-result-wrapper .at-modal__footer .at-modal__action .leftBtn {
+  color: #666; }
+
+.pay-result-wrapper .at-modal__footer .at-modal__action .rightBtn {
+  background-color: #3089DC;
+  color: white !important; }

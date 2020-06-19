@@ -1,0 +1,155 @@
+.tip{
+    background:#E6F7FF;
+    border-radius:4px;
+    border:1px solid #91D5FF;
+    padding: 10px 16px;
+    margin-bottom: 14px;
+
+    font-size:14px;
+    font-weight:400;
+    color:#595959;
+    line-height:20px;
+}
+
+.phrase-template-list{
+    margin-bottom: 14px;
+    border: 1px solid #E9E9E9;
+    .title{
+        padding: 11px 20px;
+        background: #FAFAFA;
+        border-radius: 4px 4px 0 0;
+        border-bottom: 1px solid #E9E9E9;
+        font-size:14px;
+        font-weight:600;
+        color:#8C8C8C;
+        line-height:22px;
+    }
+    .content{
+        border-radius: 0 0 4px 4px;
+        font-size:16px;
+        font-weight:400;
+        color:#232424;
+        line-height:22px;
+        .phrase-item{
+            background: #FFFFFF;
+            .phrase-content{
+                margin-left: 20px;
+                padding: 16px 20px 16px 0;
+                border-bottom: 1px solid #E9E9E9;
+                display: flex;
+                flex-direction: column;
+                .main-content{
+                    display: flex;
+                    .main-text{
+                        margin-left: 10px;
+                    }
+                    .textarea{
+                        margin-left: 10px;
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid #1890FF;
+                        border-radius: 4px;
+                    }
+                }
+                .tip{
+                    margin-top: 12px;
+                    background: #FFF5EB;
+                    border-radius: 4px;
+                    padding: 8px 30px;
+
+                    font-size:14px;
+                    font-weight:400;
+                    color:#595959;
+                    line-height:24px;
+                }
+                .extra-button{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .edit-btn{
+                        font-size:14px;
+                        font-weight:400;
+                        color:#1890FF;
+                        line-height:22px;
+                    }
+
+                    .text-btn{
+                        font-size:14px;
+                        font-weight:400;
+                        color:#1890FF;
+                        line-height:22px;
+                    }
+                    .text-btn.text-btn-disable{
+                        color: #C2C2C2;
+                    }
+                    .split-line{
+                        background: #E9E9E9;
+                        height: 14px;
+                        width: 1px;
+                        margin: 0 8px;
+                    }
+                }
+                .edit-buttons{
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    .insert-span{
+                        font-size:16px;
+                        font-weight:400;
+                        line-height:22px;
+                        display: flex;
+                        .span-title{
+                            color: #595959;
+                        }
+                        .span-list{
+                            margin-left: 42px;
+                            display: flex;
+                            .span{
+                                margin-right: 20px;
+                                .span-text{
+                                    color: #1890FF;
+                                }
+                            }
+                        }
+                    }
+                    .form-btn{
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .phrase-item:nth-last-child(1){
+            .phrase-content{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.insert-btn-span {
+    background: #FFFFFF;
+    padding: 16px 20px 14px 20px;
+    .insert-btn {
+        font-size: 15px;
+        font-weight: 400;
+        color: #1890FF;
+        line-height: 24px;
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        padding: 16px 0;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border: 1px dashed #D9D9D9;
+    }
+}
+
+// radio 样式
+.next-radio-wrapper{
+    height: 16px;
+    padding-top: 3px;
+    .next-radio{
+        vertical-align: top;
+    }
+}

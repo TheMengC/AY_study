@@ -1,0 +1,41 @@
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{title || content}}">
+        <view class="{{rootClass}}">
+            <view onTap="handleClickOverlay" class="at-modal__overlay"></view>
+            <view class="at-modal__container">
+                <block a:if="{{title}}">
+                    <at-modal-header><text>{{title}}</text>
+                    </at-modal-header>
+                </block>
+                <block a:if="{{content}}">
+                    <at-modal-content>
+                        <view class="content-simple">
+                            <block>
+                                <block a:if="{{isWEB}}"><text dangerously-set-inner-html="{{_$anonymousState__temp}}"></text>
+                                </block>
+                                <block a:else><text>{{content}}</text>
+                                </block>
+                            </block>
+                        </view>
+                    </at-modal-content>
+                </block>
+                <block a:if="{{_$isRenderAction}}">
+                    <at-modal-action compid="{{$compid__42}}">
+                        <block a:if="{{cancelText}}">
+                            <button onTap="handleCancel">{{cancelText}}</button>
+                        </block>
+                        <block a:if="{{confirmText}}">
+                            <button onTap="handleConfirm">{{confirmText}}</button>
+                        </block>
+                    </at-modal-action>
+                </block>
+            </view>
+        </view>
+    </block>
+    <view catchTouchMove="handleTouchMove" class="{{rootClass}}" a:else>
+        <view class="at-modal__overlay" onTap="handleClickOverlay"></view>
+        <view class="at-modal__container">
+            <slot></slot>
+        </view>
+    </view>
+</block>

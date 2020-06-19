@@ -1,0 +1,36 @@
+{
+  "name": "miniapp-router",
+  "version": "0.1.6",
+  "description": "miniapp for taobao",
+  "author": "melonzhang",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/lodash": "^4.14.132",
+    "@types/path-to-regexp": "^1.7.0",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.11",
+    "path-to-regexp": "^3.0.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "webpack-bundle-analyzer": "^3.3.2"
+  },
+  "main": "lib/router.js",
+  "scripts": {
+    "prepublish": "npm run test && npm run build",
+    "build-dev": "webpack --env.NODE_ENV=development --watch",
+    "build": "webpack --env.NODE_ENV=development",
+    "test": "jest"
+  },
+  "files": [
+    "lib",
+    "router-view",
+    "demo"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "__npminstall_done": "Thu Oct 31 2019 20:22:50 GMT+0800 (GMT+08:00)",
+  "_from": "miniapp-router@0.1.6",
+  "_resolved": "https://registry.npm.taobao.org/miniapp-router/download/miniapp-router-0.1.6.tgz"
+}

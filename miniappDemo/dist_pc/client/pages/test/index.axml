@@ -1,0 +1,3 @@
+<block a:if="{{$taroCompReady}}">
+    <button onTap="onClick">测试</button>
+</block>

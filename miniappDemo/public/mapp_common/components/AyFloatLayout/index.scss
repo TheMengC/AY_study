@@ -1,0 +1,31 @@
+@import "~taro-ui/dist/style/components/float-layout.scss";
+
+
+.at-float-layout__container{
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    min-height:0;
+
+    .ay-float-layout-title-body{
+        border: 2rpx solid #E6E6E6;
+        background-color: #FFF;
+        padding: 24rpx;
+        border-top-left-radius:20rpx;
+        border-top-right-radius:20rpx;
+    }
+
+    .ay-float-layout-content-body{
+        padding: 40rpx 24rpx;
+        min-height: 0rpx;
+
+        .layout-body__content{
+            min-height: 0rpx;
+        }
+    }
+
+    .ay-float-layout-bottom-body{
+        width: 100%;
+        padding:24rxp;
+    }
+
+}

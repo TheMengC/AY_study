@@ -1,0 +1,71 @@
+.pc-modal-vip-wrapper {
+  .pc-modal-vip {
+    width: 656px;
+    height: 510px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    .title-bar {
+      height: 30px;
+      background-color: #f68b32;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+
+      .menu {
+        width: 156px;
+        background-color: #ffe7d3;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+
+        .menu-btn {
+          font-size: 16px;
+          justify-content:space-around;
+          align-items:center;
+          display:flex;
+          padding:8px 12px;
+          .menu-icon {
+            width: 28px;
+            height: 28px;
+          }
+
+          .menu-text {
+            font-size: 16px;
+          }
+        }
+      }
+      .ad-btns{
+        width: 500px;
+        height: 74px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .ad-buy-btn{
+          width: 150px;
+          height: 54px;
+          background-color: #f79c00;
+          color: white;
+          border-radius: 5px;
+          font-weight: 700;
+          font-size: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

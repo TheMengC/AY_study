@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "empty-page": "../../emptyPage/index",
+    "order-card": "../orderCard/index"
+  }
+}

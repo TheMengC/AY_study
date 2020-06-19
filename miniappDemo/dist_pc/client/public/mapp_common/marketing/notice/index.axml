@@ -1,0 +1,38 @@
+<template name="renderSeeMore">
+    <block>
+        <block>
+            <block a:if="{{anonymousState__temp}}">
+                <view class="notice-more" onTap="clickNotie" data-e-onTap-so="this" data-e-onTap-a-a="{{currentNotice}}">查看详情</view>
+            </block>
+        </block>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp4}}">
+        <view></view>
+    </block>
+    <block a:elif="{{anonymousState__temp3}}">
+        <view class="{{'notice ' + (from === 'index' && ENV.app === 'trade' ? '' : 'full') + ' ' + (noticeExpanded ? 'expanded' : '')}}">
+            <view class="notice-title"><text class="iconfont iconfont-yunying_announcement"></text>
+                <view>公告</view>
+            </view>
+            <block>
+                <block a:if="{{noticeExpanded}}">
+                    <view>
+                        <view class="notice-text" onTap="clickNotie" data-e-onTap-so="this" data-e-onTap-a-a="{{currentNotice}}">{{currentNotice.content}}</view>
+                        <view class="notice-collapse" onTap="clickToCollapse">收起</view>
+                        <template is="renderSeeMore" data="{{..._$_$anonymousState__temp}}"></template>
+                    </view>
+                </block>
+                <block a:else>
+                    <swiper autoplay="{{!noticeExpanded}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}" vertical="{{true}}" current="{{current}}" disable-touch="{{true}}">
+                        <swiper-item a:for="{{textList}}" a:for-item="item" a:for-index="index">
+                            <view onTap="clickToExpand" class="notice-text" data-e-onTap-so="this" data-e-onTap-a-a="{{item}}" data-e-onTap-a-b="{{index}}">{{item.content}}</view>
+                        </swiper-item>
+                    </swiper>
+                </block>
+            </block>
+            <view class="marketing-closer notice-closer" onTap="closeNotice"></view>
+        </view>
+    </block>
+</block>

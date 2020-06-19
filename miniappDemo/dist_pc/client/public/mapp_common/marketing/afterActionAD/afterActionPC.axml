@@ -1,0 +1,49 @@
+<template name="renderMiddleImg">
+    <block>
+        <view a:for="{{imgArr}}" a:for-item="item" a:for-index="_anonIdx2">
+            <image src="{{item.Image}}" class="modalMiddleImg"></image>
+            <view class="modalMiddleImgText">{{item.title}}</view>
+        </view>
+    </block>
+</template>
+<template name="renderModalBtns">
+    <block>
+        <view class="modalActionBtn" onTap="anonymousFunc0" a:for="{{loopArray7}}" a:for-item="item" a:for-index="__index0" data-e-onTap-so="this" data-e-onTap-a-a="{{item._$indexKey}}">{{item.$original.text}}</view>
+    </block>
+</template>
+<block a:if="{{$taroCompReady}}">
+    <block a:if="{{anonymousState__temp5}}">
+        <view></view>
+    </block>
+    <block a:else>
+        <block a:if="{{isModal}}">
+            <view class="modal-ad-wrapper pc-after-action-modal">
+                <view class="dialogContent afterActionModal">
+                    <image src="{{symbol}}" class="modalTopImage"></image>
+                    <view class="modalTitle">{{title}}</view>
+                    <view class="modalText">{{caption}}</view>
+                    <view class="modalMiddleImgWrap">
+                        <template is="renderMiddleImg" data="{{...anonymousState__temp}}"></template>
+                    </view>
+                    <view class="modalBtnsWrap">
+                        <template is="renderModalBtns" data="{{...anonymousState__temp2}}"></template>{{anonymousState__temp4}}</view>
+                </view>
+                <block>
+                    <block a:if="{{canClose}}">
+                        <image src="{{close_icon}}" class="modalDownBtn modalDownImg" onTap="closeAD"></image>
+                    </block>
+                    <block a:else>
+                        <view class="modalDownBtn" onTap="goToBall">{{later_text}}</view>
+                    </block>
+                </block>
+            </view>
+        </block>
+        <block a:else>
+            <view class="pc-after-action-ball">
+                <view onTap="backToModal" class="commonBallStyle">
+                    <image src="{{later_float}}" alt="" class="afterActionBallImg"></image>
+                </view>
+            </view>
+        </block>
+    </block>
+</block>

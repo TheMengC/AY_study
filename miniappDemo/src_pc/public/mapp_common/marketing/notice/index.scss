@@ -1,0 +1,107 @@
+.notice {
+  display: flex;
+  flex-direction: row;
+  width: 710rpx;
+  height: 40rpx;
+  align-items: center;
+  margin: 20rpx 20rpx 0;
+  background:linear-gradient(90deg,rgba(243,120,69,0.15) 0%,rgba(243,120,69,0.1) 100%);
+  border-radius:8rpx;
+  position: relative;
+
+  &.expanded{
+    height: auto;
+    align-items: unset;
+
+    .notice-text{
+      overflow:unset;
+      white-space:unset;
+      text-overflow:unset;
+      padding: 4rpx 0;
+    }
+
+    .notice-more{
+      display:inline-block;
+      margin-right:20rpx;
+      float: right;
+      font-size:24rpx;
+      color:#999;
+      line-height: 34rpx;
+      text-decoration: underline;
+    }
+  }
+
+  swiper{
+    width: 554rpx;
+    height: 32rpx;
+  }
+
+  &.full{
+    width: 710rpx;
+    padding: 6rpx 20rpx;
+    justify-content: space-between;
+    margin: unset;
+    border-radius: 0;
+    .notice-closer{
+      position: static;
+    }
+  }
+
+  .notice-title{
+    width:102rpx;
+    height:40rpx;
+    background:linear-gradient(90deg,rgba(249,131,81,1) 0%,rgba(243,180,69,1) 100%);
+    border-radius:8rpx 6rpx 24rpx 8rpx;
+    margin-right: 10rpx;
+    font-size:26px;
+    font-weight:600;
+    color:rgb(255,255,255);
+    padding: 0 8rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .iconfont{
+      font-size: 24rpx;
+      color: white;
+    }
+  }
+
+  .notice-text {
+    font-size:26rpx;
+    font-weight:600;
+    color:rgb(243,120,69);
+    line-height:36rpx;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width:5.54rem;
+  }
+
+  .notice-closer{
+    background: url("//q.aiyongbao.com/miniapp/marketing/mobile/notice_closer.png") 0% 0% / 100% 100%;
+  }
+
+  .notice-collapse{
+    display:flex;
+    align-items:center;
+    font-weight:400;
+    color:#999;
+    line-height:34px;
+    padding-bottom: 5rpx;
+    width: fit-content;
+    float: right;
+    font-size: 24rpx;
+
+    &:after{
+      content:'';
+      width: 22rpx;
+      height: 12rpx;
+      background: url("//q.aiyongbao.com/miniapp/marketing/mobile/notice_up.png") 0% 0% / 100% 100%;
+      position: absolute;
+      right: 10rpx;
+      line-height:34px;
+    }
+  }
+}

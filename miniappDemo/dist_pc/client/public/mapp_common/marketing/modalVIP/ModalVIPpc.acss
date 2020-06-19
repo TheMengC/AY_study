@@ -1,0 +1,55 @@
+
+.pc-modal-vip-wrapper .pc-modal-vip {
+  width: 656px;
+  height: 510px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px; }
+  .pc-modal-vip-wrapper .pc-modal-vip .title-bar {
+    height: 30px;
+    background-color: #f68b32;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px; }
+  .pc-modal-vip-wrapper .pc-modal-vip .content {
+    flex: 1;
+    display: flex;
+    flex-direction: row; }
+    .pc-modal-vip-wrapper .pc-modal-vip .content .menu {
+      width: 156px;
+      background-color: #ffe7d3;
+      display: flex;
+      flex-direction: column;
+      padding-top: 8px; }
+      .pc-modal-vip-wrapper .pc-modal-vip .content .menu .menu-btn {
+        font-size: 16px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        padding: 8px 12px; }
+        .pc-modal-vip-wrapper .pc-modal-vip .content .menu .menu-btn .menu-icon {
+          width: 28px;
+          height: 28px; }
+        .pc-modal-vip-wrapper .pc-modal-vip .content .menu .menu-btn .menu-text {
+          font-size: 16px; }
+    .pc-modal-vip-wrapper .pc-modal-vip .content .ad-btns {
+      width: 500px;
+      height: 74px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .pc-modal-vip-wrapper .pc-modal-vip .content .ad-btns .ad-buy-btn {
+        width: 150px;
+        height: 54px;
+        background-color: #f79c00;
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }

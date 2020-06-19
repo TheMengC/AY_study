@@ -1,0 +1,113 @@
+.modal-vip-ios-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ad-img {
+    width: 702rpx;
+    height: 702rpx;
+    margin: 24rpx;
+  }
+
+  .ad-btn {
+    width: 560rpx;
+    height: 96rpx;
+    border-radius: 50rpx;
+  }
+
+  .ad-intro {
+    width: 676rpx;
+    height: 290rpx;
+    margin: 24rpx;
+  }
+}
+
+.modal-vip-wrapper{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  z-index:900;
+  justify-content: start!important;
+  flex-direction: column;
+  swiper {
+    swiper-item {
+      display: flex;
+      justify-content: center;
+      .swiper-image {
+        width: 480rpx;
+        height: 480rpx;
+      }
+    }
+  }
+  .swipper-banner{
+    width: 750rpx;
+    height: 176rpx;
+  }
+  .swipper-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64rpx;
+    button{
+      margin: 16rpx;
+      padding: 4rpx 24rpx;
+      height: inherit;
+      border-radius: 10rpx;
+      border: 0;
+    }
+  }
+  .closer{
+    width: 50rpx;
+    height: 50rpx;
+    background: url("//imgoacdn.aliyuncs.com/MjVkZDZhYmMtODg0Mi00YTFlLThmNzgtNWIwMmU5Y2I2ZTFl_913181696_MjAwKjIwMA%3D%3D.png");
+  }
+
+  &.auto-pay{
+    justify-content: center!important;
+    .auto-pay-img{
+      width: 750rpx;
+      height: 900rpx;
+    }
+    .btn-group{
+      display: flex;
+      width: 500rpx;
+      height: 100rpx;
+      margin-top: 100rpx;
+      background-color: #fff;
+      position: absolute;
+      padding:18rpx 20rpx;
+      box-sizing:border-box;
+      justify-content:space-between;
+      border-radius:0 0 10rpx 10rpx;
+      .auto-pay-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1rpx solid rgb(234, 93, 0);
+        width:220rpx;
+        border-radius:10rpx;
+        font-size:28rpx;
+        font-weight:600;
+
+        &.no-auto{
+          color: #ea5d00;
+          background-color: white;
+        }
+
+        &.learn-more{
+          background-color: #ea5d00;
+          color: white;
+        }
+      }
+    }
+  }
+}

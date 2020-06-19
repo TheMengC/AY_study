@@ -1,0 +1,193 @@
+.my-dialog-wrapper {
+    font-size: 14px;
+    z-index: 100;
+    box-sizing: border-box;
+
+    .my-dialog-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .at-modal__overlay {
+        z-index: 99;
+    }
+
+    .text-warning {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        color: rgb(245, 119, 69);
+        line-height: 20px;
+    }
+
+    .dialog-title {
+        display: flex;
+        align-items: center;
+        height: 45px;
+    }
+
+    .iconfont-guanbi {
+        font-size: 16px;
+        color: #D9D9D9;
+        margin-right: 20px;
+    }
+
+    .dialog-title-text {
+        flex: 1;
+        margin-left: 20px;
+        color: #232424;
+        font-size: 16px;
+    }
+
+    .dialog-title-close {
+        margin-right: 20px;
+    }
+
+    .dialog-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+// 关闭订单弹窗、发货弹窗 订单样式
+.check-trade-list {
+    overflow-y: scroll;
+    margin-bottom: 12px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    flex-shrink: 1;
+
+    .order-card {
+        padding: 8px 13px 8px 8px;
+    }
+
+    .check-order {
+        display: flex;
+
+        // 关闭订单弹窗、发货弹窗 order边框样式
+        &:last-child {
+            .order-content {
+                border: unset;
+            }
+        }
+
+        .next-checkbox-wrapper {
+            margin-left: 12px;
+            margin-top: 29px;
+        }
+    }
+    .order-content {
+        border-bottom: 1px solid #EBEBEB;
+    }
+}
+.at-modal__container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    border-radius: 4px !important;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 2px 0 rgba(155, 155, 155, 1);
+    border: 1px solid rgba(235, 235, 235, 1);
+    overflow: initial;
+    .bottom{
+        .next-btn{
+            margin-right: 15px;
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+    &.hidden{
+        visibility: hidden;
+    }
+    &.confirm-dialog {
+        padding-bottom: 20px;
+        width: 390px;
+        min-height: 158px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .content-simple {
+            font-size: 17px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 28px;
+        }
+
+        .my-dialog-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .at-modal__content {
+            padding: 0 !important;
+        }
+
+        .dialog-bottom {
+            .next-btn{
+                margin-right: 15px;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+            margin: 10px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .next-btn.next-medium {
+            box-sizing: border-box;
+            min-width: 88px;
+        }
+
+        .btn-cancel {
+            margin-right: 36px;
+        }
+    }
+}
+
+/* InputDialog 样式 */
+.input-dialog {
+    .dialog-title {
+        border-bottom: 1px solid rgba(215,219,224,1);
+    }
+    .input-dialog-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+        align-items: baseline;
+        .input-dialog-input {
+            margin-left: 20px;
+        }
+    }
+    .input-dialog-bottom {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        :first-child {
+            color: #1890FF;
+            border-radius:4px;
+            border:1px solid rgba(24,144,255,1);
+        }
+        :last-child {
+            background:rgba(24,144,255,1);
+            border-radius:4px;
+            border:1px solid rgba(24,144,255,1);
+            color: #fff;
+            margin-left: 16px;
+        }
+    }
+}

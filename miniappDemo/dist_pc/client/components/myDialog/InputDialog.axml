@@ -1,0 +1,11 @@
+<block a:if="{{$taroCompReady}}">
+    <my-dialog compid="{{$compid__41}}">
+        <view class="input-dialog-up"><text class="input-dialog-up-text">{{labelName}}</text>
+            <input class="input-dialog-input" placeholder="{{placeholder}}" value="{{value}}" onInput="onchangeInput" style="{{anonymousState__temp}}" data-e-onInput-so="this" />
+        </view>
+        <view class="input-dialog-bottom">
+            <button onTap="onCancel" data-e-onTap-so="this">{{cancelText}}</button>
+            <button onTap="onOK" data-e-onTap-so="this">{{confirmText}}</button>
+        </view>
+    </my-dialog>
+</block>

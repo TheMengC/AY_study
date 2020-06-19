@@ -1,0 +1,60 @@
+@import "../../style/index";
+
+.next-pagination {
+    display: flex;
+
+    .next-pagination-size-selector-title {
+        display: none;
+    }
+    .next-prev, .next-next {
+        height: 36px;
+        color: $AyBlue;
+        background: rgba(255,255,255,1);
+        border-radius: 3px;
+        border: 1px solid rgba(215,219,224,1);
+    }
+    .next-pagination-list {
+        display: inline-flex;
+        align-items: center;
+
+        .next-pagination-item {
+            width:34px;
+            height:36px;
+            padding: 0;
+            color: #333;
+            background:rgba(255,255,255,1);
+            border-radius:3px;
+            border:1px solid rgba(215,219,224,1);
+        }
+        .next-current {
+            color: #fff;
+            background:rgba(51,134,241,1);
+            border:1px solid rgba(51,134,241,1);
+        }
+
+    }
+    .next-btn.disabled, .next-btn.disabled:link, .next-btn.disabled:visited, .next-btn.disabled.visited, .next-btn[disabled], .next-btn[disabled]:link, .next-btn[disabled]:visited, .next-btn[disabled].visited {
+        color: #C4C6CF;
+    }
+    .next-btn.disabled, .next-btn[disabled] {
+        cursor: not-allowed;
+        background-color: #FAFBFC;
+        border-color: #F2F2F2;
+    }
+
+    .next-pagination-size-selector {
+        margin-left: 6px;
+
+        .next-select-inner {
+            font-size: 14px;
+            width: 95px;
+            height: 36px;
+            background: rgba(255,255,255,1);
+            border-radius: 3px;
+            border: 1px solid rgba(215,219,224,1);
+        }
+        .next-input.next-medium .next-input-text-field {
+            font-size: 14px;
+        }
+    }
+}

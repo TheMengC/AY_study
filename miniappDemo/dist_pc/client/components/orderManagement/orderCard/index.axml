@@ -1,0 +1,56 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="order-list">
+        <view class="order-title">
+            <checkbox class="check-box"></checkbox>
+            <view class="order-tab">{{tab}}</view>
+            <view class="order-id">编号：{{trade.tid}}</view><text class="order-icon iconfont iconfont-fuzhi"></text>
+            <view class="order-time">下单时间：{{trade.created}}</view><text class="order-icon iconfont iconfont-beizhuqi"></text><text class="order-icon iconfont iconfont-shuaxin"></text>
+        </view>
+        <view class="order-content">
+            <view class="order-goods">
+                <goods-list a:for="{{loopArray26}}" a:for-item="item" a:for-index="_anonIdx2" compid="{{item.$compid__47}}"></goods-list>
+            </view>
+            <view class="user-icon">
+                <view><text class="order-wang iconfont iconfont-wangwang"></text>
+                    <view class="order-time">{{trade.buyer_nick}}</view><text class="order-last iconfont iconfont-fuzhi"></text>
+                </view>
+                <view class="order-item"><text class="order-icon iconfont iconfont-wangwang"></text>
+                    <view class="order-time">旺旺催付</view>
+                </view>
+                <view class="order-item"><text class="order-icon iconfont iconfont-duanxincuifu"></text>
+                    <view class="order-time">短信催付</view>
+                </view>
+                <view class="order-item"><text class="order-icon iconfont iconfont-zuzhiTApaidan"></text>
+                    <view class="order-time">阻止此买家拍单</view>
+                </view>
+                <view class="order-item"><text class="order-icon iconfont iconfont-heduidingdan"></text>
+                    <view class="order-time">核对订单</view>
+                </view>
+            </view>
+            <view class="order-price">
+                <view class="price-box">
+                    <view class="result-title">实付：</view>
+                    <view class="result-price">￥{{trade.payment}}</view>
+                    <view class="result-post">(含运费￥{{trade.post_fee}})</view>
+                </view>
+                <view class="order-num">数量：{{trade.num}}</view>
+            </view>
+            <view class="order-result"><text class="order-icon iconfont iconfont-dingdanxiangqing"></text>
+                <view class="order-detail">订单详情</view>
+            </view>
+            <view class="order-change">
+                <view><text class="order-icon iconfont iconfont-shangpinshezhi"></text>
+                    <view class="order-detail">修改价格</view>
+                </view>
+                <view><text class="order-icon iconfont iconfont-guanbi"></text>
+                    <view class="order-detail">关闭订单</view>
+                </view>
+            </view>
+        </view>
+        <view class="order-footer">
+            <view class="order-address">收货地址：{{trade.receiver_name}},{{trade.receiver_mobile}},{{trade.receiver_state}} {{trade.receiver_city}} {{trade.receiver_district}} {{trade.receiver_address}},{{trade.receiver_zip}}<text class="order-icon iconfont iconfont-fuzhi"></text>
+                <view class="order-sure">核对地址</view>
+            </view>
+        </view>
+    </view>
+</block>

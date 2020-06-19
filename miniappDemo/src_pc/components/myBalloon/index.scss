@@ -1,0 +1,27 @@
+.my-balloon.next-balloon-medium {
+    padding: 5px 10px;
+
+    .balloon-text {
+        font-size: 12px;
+        color: #595959;
+    }
+}
+
+.balloon-btn {
+    &.next-btn.next-medium {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: unset;
+        height: unset;
+        line-height: unset;
+    }
+    &.next-btn.next-btn-normal, .next-btn.next-btn-normal:link, .next-btn.next-btn-normal:visited, .next-btn.next-btn-normal.visite {
+        background: none;
+    }
+    &.next-btn:hover {
+        box-shadow: none !important;
+    }
+}
+
+

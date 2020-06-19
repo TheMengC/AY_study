@@ -1,0 +1,8 @@
+<block a:if="{{$taroCompReady}}">
+    <view class="order-management">
+        <view class="grid-item24 tab-con">
+            <my-tabs compid="{{$compid__48}}"></my-tabs>
+        </view>
+        <order-list></order-list>
+    </view>
+</block>

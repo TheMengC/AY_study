@@ -1,0 +1,138 @@
+
+@charset "UTF-8";
+.my-dialog-wrapper {
+  font-size: 14px;
+  z-index: 100;
+  box-sizing: border-box; }
+  .my-dialog-wrapper .my-dialog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between; }
+  .my-dialog-wrapper .at-modal__overlay {
+    z-index: 99; }
+  .my-dialog-wrapper .text-warning {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #f57745;
+    line-height: 20px; }
+  .my-dialog-wrapper .dialog-title {
+    display: flex;
+    align-items: center;
+    height: 45px; }
+  .my-dialog-wrapper .iconfont-guanbi {
+    font-size: 16px;
+    color: #D9D9D9;
+    margin-right: 20px; }
+  .my-dialog-wrapper .dialog-title-text {
+    flex: 1;
+    margin-left: 20px;
+    color: #232424;
+    font-size: 16px; }
+  .my-dialog-wrapper .dialog-title-close {
+    margin-right: 20px; }
+  .my-dialog-wrapper .dialog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+
+.check-trade-list {
+  overflow-y: scroll;
+  margin-bottom: 12px;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+  flex-shrink: 1; }
+  .check-trade-list .order-card {
+    padding: 8px 13px 8px 8px; }
+  .check-trade-list .check-order {
+    display: flex; }
+    .check-trade-list .check-order:last-child .order-content {
+      border: unset; }
+    .check-trade-list .check-order .next-checkbox-wrapper {
+      margin-left: 12px;
+      margin-top: 29px; }
+  .check-trade-list .order-content {
+    border-bottom: 1px solid #EBEBEB; }
+
+.at-modal__container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 100;
+  width: auto;
+  height: auto;
+  border-radius: 4px !important;
+  background: white;
+  box-shadow: 1px 1px 2px 0 #9b9b9b;
+  border: 1px solid #ebebeb;
+  overflow: initial; }
+  .at-modal__container .bottom .next-btn {
+    margin-right: 15px; }
+    .at-modal__container .bottom .next-btn:nth-last-child(1) {
+      margin-right: 0; }
+  .at-modal__container.hidden {
+    visibility: hidden; }
+  .at-modal__container.confirm-dialog {
+    padding-bottom: 20px;
+    width: 390px;
+    min-height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .at-modal__container.confirm-dialog .content-simple {
+      font-size: 17px;
+      font-weight: 400;
+      color: #000000;
+      line-height: 28px; }
+    .at-modal__container.confirm-dialog .my-dialog-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px; }
+    .at-modal__container.confirm-dialog .at-modal__content {
+      padding: 0 !important; }
+    .at-modal__container.confirm-dialog .dialog-bottom {
+      margin: 10px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around; }
+      .at-modal__container.confirm-dialog .dialog-bottom .next-btn {
+        margin-right: 15px; }
+        .at-modal__container.confirm-dialog .dialog-bottom .next-btn:nth-last-child(1) {
+          margin-right: 0; }
+    .at-modal__container.confirm-dialog .next-btn.next-medium {
+      box-sizing: border-box;
+      min-width: 88px; }
+    .at-modal__container.confirm-dialog .btn-cancel {
+      margin-right: 36px; }
+
+/* InputDialog 样式 */
+.input-dialog .dialog-title {
+  border-bottom: 1px solid #d7dbe0; }
+
+.input-dialog .input-dialog-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: baseline; }
+  .input-dialog .input-dialog-up .input-dialog-input {
+    margin-left: 20px; }
+
+.input-dialog .input-dialog-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; }
+  .input-dialog .input-dialog-bottom :first-child {
+    color: #1890FF;
+    border-radius: 4px;
+    border: 1px solid #1890ff; }
+  .input-dialog .input-dialog-bottom :last-child {
+    background: #1890ff;
+    border-radius: 4px;
+    border: 1px solid #1890ff;
+    color: #fff;
+    margin-left: 16px; }

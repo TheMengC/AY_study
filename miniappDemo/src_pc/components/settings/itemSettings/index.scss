@@ -1,0 +1,23 @@
+.item-settings-page{
+    padding: 0 20px;
+    .tab-bar{
+        margin-bottom: 20px;
+    }
+    .insert-btn {
+        padding: 8px 18px;
+        display: flex;
+        align-items: center;
+        background: #1890FF;
+        border-radius: 4px;
+
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 24px;
+
+        .iconfont-zengjia {
+            margin-right: 6px;
+            font-size: 15px;
+        }
+    }
+}

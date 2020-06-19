@@ -1,0 +1,22 @@
+{
+  "component": true,
+  "usingComponents": {
+    "modal-a-dpc": "./modalAD/ModalADpc",
+    "modal-ad": "./modalAD/index",
+    "banner-a-dpc": "./bannerAD/bannerADpc",
+    "banner-ad": "./bannerAD/index",
+    "after-action-a-dpc": "./afterActionAD/afterActionPC",
+    "after-action-ad": "./afterActionAD/index",
+    "renew-box-pc": "./renewBox/renewBoxPC",
+    "renew-box": "./renewBox/index",
+    "mid-coupon-pc": "./midCoupon/midCouponPC",
+    "mid-coupon": "./midCoupon/index",
+    "notice-pc": "./notice/noticePC",
+    "notice": "./notice/index",
+    "modal-vi-ppc": "./modalVIP/ModalVIPpc",
+    "modal-vip": "./modalVIP/index",
+    "mid-card": "./midCard/index",
+    "pay-result-pc": "./payResult/payResultPC",
+    "pay-result": "./payResult/index"
+  }
+}

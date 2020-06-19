@@ -1,0 +1,129 @@
+.my-table {
+    .head {
+        background: #FAFAFA;
+        border-radius: 4px 4px 0 0;
+
+        .title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #595959;
+            line-height: 21px;
+            padding: 10px 0;
+        }
+    }
+
+    .head {
+        .title:nth-child(1) {
+            padding-left: 20px;
+        }
+    }
+
+    .body {
+        .row {
+            background: #FFFFFF;
+
+            .cell {
+                display: flex;
+                align-items: center;
+                padding: 16px 0;
+                font-size: 15px;
+                font-weight: 400;
+                color: #595959;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .body {
+        .row:nth-child(2n) {
+            background: #FAFAFA;
+        }
+
+        .row {
+            .cell:nth-child(1) {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+.logistics-address-page {
+    padding-top: 20px;
+
+    .header-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #232424;
+            line-height: 25px;
+        }
+
+        .right {
+            font-size: 15px;
+            font-weight: 400;
+            color: #232424;
+            display: flex;
+            align-items: center;
+
+            .checkbox {
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .address-cell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-btn-cell {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .edit-btn {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1890FF;
+            line-height: 22px;
+            cursor: pointer;
+        }
+        .edit-btn.edit-btn-disable{
+            color: #C2C2C2;
+        }
+
+        .split-line {
+            width: 1px;
+            height: 14px;
+            background: #E9E9E9;
+            margin: 0 10px;
+
+        }
+    }
+
+    .bottom-buttons {
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        .add-btn{
+            padding: 8px 18px;
+            border-radius:4px;
+            background: #1890FF;
+
+            font-size:16px;
+            font-weight:400;
+            color:#FFFFFF;
+            line-height:24px;
+            display: flex;
+            align-items: center;
+            .iconfont{
+                margin-right: 6px;
+            }
+        }
+    }
+}

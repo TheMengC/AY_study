@@ -1,0 +1,19 @@
+.check-address-phrase-page{
+    padding-top: 20px;
+    .phrase-template-list{
+        .content.check-address-content{
+            background: #FFFFFF;
+            display: flex;
+            .phrase-item{
+                flex: 0 0 50%;
+                .phrase-content{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .ww-emoji-span{
+        width: 30px;
+        height: 30px;
+    }
+}

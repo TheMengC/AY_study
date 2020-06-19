@@ -1,0 +1,67 @@
+.my-base-table-container {
+    background-color: #FFFFFF;
+
+    .my-base-table-head {
+        height: 40px;
+        background-color: #FAFAFA;
+        display: flex;
+    }
+
+    .my-base-table-body {
+
+    }
+
+    .my-base-table-body-row:nth-child(2n) {
+        background-color: #FAFAFA;
+    }
+
+    .my-base-table-body-row {
+        height: 76px;
+        display: flex;
+    }
+
+    .flex-auto-width{
+        flex: 1 1 10px;
+    }
+
+    .flex-fix-width {
+        flex: none;
+    }
+
+    .my-base-table-text-center {
+         height: 100%;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+    .my-base-table-text-color {
+        color: #8C8C8C;
+        font-weight: 600;
+    }
+
+    .my-base-table-column-index {
+        padding-left: 20px;
+        justify-content: left;
+    }
+
+    .my-base-table-column-operation {
+        display: flex;
+        align-items: center;
+
+        view {
+            color: #1890FF;
+            padding: 0 10px;
+            flex: none;
+        }
+
+        .right-border {
+            width: 1px;
+            height: 14px;
+            padding: 0;
+            background-color: #E9E9E9;
+        }
+    }
+
+}

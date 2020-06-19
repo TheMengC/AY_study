@@ -1,0 +1,235 @@
+.newuser {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background:linear-gradient(309deg,rgba(250,207,4,1) 0%,rgba(255,166,3,1) 100%);
+    color: #333333;
+    font-size: 28rpx;
+    .header-bg {
+        position: absolute;
+        top: 0;
+        height: 260rpx;
+        width: 100vw;
+        .header-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .newuser-body {
+        display: flex;
+        flex-direction:column;
+        z-index:10;
+        margin-top: 254rpx;
+        margin-bottom: 64rpx;
+        width: 710rpx;
+        .newuser-checkin {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30rpx;
+            box-sizing: border-box;
+            .checkin-card {
+                background:rgba(255,255,255,1);
+                box-shadow:0px 6px 6px 0px rgba(254,175,3,0.4);
+                border-radius:20rpx;
+                //position: absolute;
+                width: 710rpx;
+                min-height: 340rpx;
+                padding: 22rpx 30rpx 32rpx 30rpx;
+                box-sizing: border-box;
+                margin: 0 auto;
+                //font-size: 28rpx;
+                //color: #8E8E8E;
+
+                .card-top {
+                    height: 60rpx;
+                    //position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .top-text{
+                        //width:240rpx;
+                        height: 60rpx;
+                        font-size:32rpx;
+                        font-family:PingFangSC-Semibold,PingFang SC;
+                        font-weight:600;
+                        color:rgba(51,51,51,1);
+                        line-height: 60rpx;
+                    }
+                    .top-rules {
+                        display: flex;
+                        align-items: center;
+                        height: 60rpx;
+                        line-height: 60rpx;
+                        .rules-icon {
+                            width:30rpx;
+                            height:30rpx;
+                            margin-right: 4rpx;
+                        }
+                    }
+                }
+                .card-mid {
+                    .status-one {
+                        //width:308rpx;
+                        height:40rpx;
+                        font-size:28rpx;
+                        font-family:PingFangSC-Medium,PingFang SC;
+                        font-weight:500;
+                        color:rgba(254,177,3,1);
+                        line-height:40rpx;
+                        margin-bottom: 62rpx;
+                        .tips {
+                            margin-left: 24rpx;
+                            width:192rpx;
+                            height:34rpx;
+                            font-size:24rpx;
+                            font-family:PingFangSC-Regular,PingFang SC;
+                            font-weight:400;
+                            color:rgba(156,156,156,1);
+                            line-height:34rpx;
+                        }
+                    }
+                    .status-two {
+                        margin-top: 28rpx;
+                        margin-bottom: 54rpx;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        .reward {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            .reward-name {
+                                //width:96px;
+                                height:34rpx;
+                                font-size:24rpx;
+                                font-family:PingFangSC-Medium,PingFang SC;
+                                font-weight:500;
+                                color:rgba(153,153,153,1);
+                                line-height:34rpx;
+                            }
+                            .reward-number {
+                                height:84rpx;
+                                font-size:60rpx;
+                                font-family:PingFangSC-Medium,PingFang SC;
+                                font-weight:500;
+                                color:rgba(51,51,51,1);
+                                line-height:84rpx;
+                            }
+                            .reward-btn {
+                                 //min-width:134rpx;
+                                 height:44rpx;
+                                 border-radius:25rpx;
+                                 border:2rpx solid rgba(253,84,41,1);
+                                 box-sizing: border-box;
+                                 padding: 4rpx 20rpx;
+                                 display: flex;
+                                 align-items: center;
+                                 justify-content: center;
+                                 .reward-btn-text {
+                                     //width:96rpx;
+                                     height:34rpx;
+                                     font-size:24rpx;
+                                     font-family:PingFangSC-Medium,PingFang SC;
+                                     font-weight:500;
+                                     color:rgba(253,84,41,1);
+                                     line-height:34rpx;
+                                 }
+                             }
+                            .reward-btn-end {
+                                min-width:134rpx;
+                                height:44rpx;
+                                border-radius:25rpx;
+                                box-sizing: border-box;
+                                padding: 4rpx 20rpx;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: none;
+                                background:rgba(241,241,241,1);
+                                .reward-btn-text {
+                                    color:rgba(156,156,156,1);
+                                    height:34rpx;
+                                    font-size:24rpx;
+                                    font-family:PingFangSC-Medium,PingFang SC;
+                                    font-weight:500;
+                                    line-height:34rpx;
+                                }
+                            }
+                            .reward-btn-wrapper {
+                                height:44rpx;
+                                width: 100%;
+
+                            }
+                        }
+                    }
+                }
+                .card-bottom {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .progress-wrapper {
+                        position: relative;
+                        .progress-img {
+                            width:72rpx;
+                            height:104rpx;
+                            background:linear-gradient(180deg,rgba(251,170,4,1) 0%,rgba(255,97,65,1) 100%);
+                            border-radius:8rpx;
+                        }
+                        .progress-text {
+                            position: absolute;
+                            bottom: 12rpx;
+                            left: 16rpx;
+                            width: 40rpx;
+                            height: 34rpx;
+                            font-size: 24rpx;
+                            font-family:PingFangSC-Medium,PingFang SC;
+                            font-weight:500;
+                            //color:rgba(156,156,156,1);
+                            line-height: 34rpx;
+                            color: white;
+                        }
+                    }
+
+                }
+                //.smsBtn {
+                //    color: #D98200;
+                //}
+                //.smsBtnGrey {
+                //    color: black;
+                //    border: 2rpx #9B9B9B solid;
+                //    border-radius: 10rpx;
+                //}
+            }
+        }
+
+        .newuser-tasks {
+            width: 100%;
+            padding: 32rpx 24rpx 0rpx 30rpx;
+            display: flex;
+            flex-direction: column;
+            //width:710rpx;
+            box-sizing: border-box;
+            min-height:662rpx;
+            background:rgba(255,255,255,1);
+            border-radius:20px;
+            .tasks-title {
+                width:128rpx;
+                height:44rpx;
+                font-size:32rpx;
+                font-family:PingFangSC-Semibold,PingFang SC;
+                font-weight:600;
+                color:rgba(153,153,153,1);
+                margin-bottom: 34rpx;
+            }
+
+
+        }
+    }
+}

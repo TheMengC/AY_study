@@ -1,0 +1,196 @@
+.container {
+    width: 100%;
+    padding: 20rpx 0;
+    .card{
+        margin-top: 16rpx;
+        margin-bottom: 20rpx;
+        overflow: hidden;
+        color: #999999;
+        background-color: #FFFFFF;
+        font-size: 24rpx;
+        padding: 20rpx;
+        line-height: 40rpx;
+        .head {
+            flex-wrap: wrap;
+            color: #333;
+            font-size: 28rpx;
+            box-sizing: border-box;
+            border-bottom: 2rpx solid #F2F2F2;
+        }
+        .status-label {
+            color: white;
+            height: 36rpx;
+            line-height: 36rpx;
+            border-radius: 36rpx;
+            padding: 0 10rpx;
+            margin: 0 10rpx;
+        }
+        .hr{
+            border-bottom: 2rpx solid #F2F2F2;
+        }
+        .content{
+            flex-wrap: wrap;
+            color: #333;
+            font-size: 28rpx;
+            box-sizing: border-box;
+
+        }
+        .textarea{
+            height: 380rpx;
+            font-size: 32rpx;
+            padding: 0rpx;
+        }
+    }
+}
+.left{
+    align-items:center;
+    display: flex;
+}
+.right{
+    align-items:center;
+    display: flex;
+}
+.nick {
+    display: flex;
+    font-size:24rpx;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:32rpx;
+
+    .iconfont {
+        color: #1296db;
+        font-size: 32rpx;
+    }
+}
+
+.item-flex{
+    display: flex;
+    .item-flex-grid-span1{
+        flex-grow:1
+    }
+    .item-flex-grid-span2{
+        flex-grow:2
+    }
+    .item-flex-grid-span3{
+        flex-grow:3
+    }
+    .item-flex-grid-span4{
+        flex-grow:4
+    }
+    .item-flex-grid-span5{
+        flex-grow:5
+    }
+    .item-flex-grid-span6{
+        flex-grow:6
+    }
+    .item-flex-grid-span7{
+        flex-grow:7
+    }
+    .item-flex-grid-span8{
+        flex-grow:8
+    }
+    .item-flex-grid-span9{
+        flex-grow:9
+    }
+    .item-flex-grid-span10{
+        flex-grow:10
+    }
+    .item-flex-grid-span11{
+        flex-grow:11
+    }
+    .item-flex-grid-span12{
+        flex-grow:12
+    }
+}
+.item-space-between{
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.trade-card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .tradebtn {
+        z-index: 3;
+        margin-right: 10rpx;
+        &:nth-last-child(1){
+            margin-right: 0;
+        }
+    }
+    padding: 20rpx 0;
+}
+
+.footer-fixed-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:16rpx 20rpx;
+    background-color: #FFFFFF;
+    z-index: 5;
+    box-shadow:0 0 24rpx 0 rgba(0,0,0,0.08);
+}
+.footer-button-area{
+    padding: 20rpx;
+}
+.footer-button-area-vertical{
+    padding: 20rpx;
+    .footer-button{
+        margin: 0;
+    }
+}
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 34rpx;
+    border: 0;
+    z-index: 5;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background: linear-gradient(180deg, rgba(250, 176, 123, 1) 0%, rgba(243, 120, 69, 1) 100%);
+    box-shadow: 0rpx 20rpx 60rpx 0rpx rgba(243, 120, 69, 0.4);
+    border-radius: 50rpx;
+    font-weight: 700;
+    color: #FFFFFF;
+    height: 88rpx;
+    &.empty {
+        border: solid 1px #f37845;
+        background: #FFFFFF;
+        color: #f37845;
+        box-shadow: none;
+    }
+    &.weak{
+        border: 0;
+        background: #FFFFFF;
+        color: #f37845;
+        box-shadow: none;
+        background: unset;
+    }
+    margin-right: 30rpx;
+    &:nth-last-child(1){
+        margin-right: 0;
+    }
+    &.multiline{
+        .main-text{
+            font-size: 32rpx;
+            font-weight: 700;
+            line-height: 44rpx;
+        }
+        .extra-text{
+            font-size: 24rpx;
+            font-weight: 400;
+            line-height: 34rpx;
+        }
+    }
+}

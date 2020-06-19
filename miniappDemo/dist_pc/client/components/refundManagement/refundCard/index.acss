@@ -1,0 +1,271 @@
+
+.tab-con {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.trade-tab {
+  width: auto !important;
+  color: #666666;
+  height: 43px;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: visible;
+  cursor: pointer; }
+  .trade-tab .at-tabs__item {
+    height: 43px;
+    padding: 0 16px !important;
+    border-bottom: 1.5px solid #d8d8d8;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    background-color: #F0F2F5; }
+  .trade-tab .at-tabs__item-underline {
+    height: 2px;
+    bottom: 0px;
+    background-color: #1890FF; }
+
+.tab-blank {
+  flex: 1;
+  height: 41px;
+  border-bottom: 1.5px solid #d8d8d8;
+  background-color: #F0F2F5; }
+
+.refund-detail-card {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #333333;
+  font-size: 12px; }
+  .refund-detail-card .iconfont-bianji {
+    display: none; }
+  .refund-detail-card:hover .iconfont-bianji {
+    display: inline-block; }
+  .refund-detail-card .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 39px;
+    background-color: #FAFAFA;
+    font-size: 14px; }
+    .refund-detail-card .hd .timeinfo {
+      color: #FF4343; }
+    .refund-detail-card .hd .hd-time {
+      font-weight: 600;
+      margin-right: 10px; }
+    .refund-detail-card .hd .card-item2-row {
+      font-weight: 600;
+      margin-left: 10px;
+      color: #1890FF;
+      display: flex;
+      align-items: center; }
+    .refund-detail-card .hd .iconfont {
+      margin-right: 4px;
+      color: #1890FF; }
+    .refund-detail-card .hd .hd-status {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      min-width: 0; }
+      .refund-detail-card .hd .hd-status .iconfont-beizhuqi {
+        margin-left: 10px;
+        font-size: 15px; }
+      .refund-detail-card .hd .hd-status .iconfont-shuaxin {
+        padding-left: 5px;
+        color: #999999;
+        font-size: 15px; }
+    .refund-detail-card .hd .check-box {
+      margin-top: -2px;
+      margin-left: 10px; }
+    .refund-detail-card .hd .hd-tid {
+      margin-left: 10px;
+      color: #333333;
+      font-weight: 600; }
+    .refund-detail-card .hd .iconfont-fuzhi {
+      margin-left: 5px;
+      color: #979797;
+      font-size: 18px;
+      cursor: pointer; }
+    .refund-detail-card .hd .hd-memo-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 5px;
+      color: #FF4400; }
+    .refund-detail-card .hd .hd-countdown {
+      flex-shrink: 0;
+      margin-right: 10px; }
+    .refund-detail-card .hd .countdown-time {
+      color: #FF4400; }
+  .refund-detail-card .hd2 .warn-area, .refund-detail-card .hd2 .buyer-msg {
+    margin: 10px 10px 0 10px; }
+  .refund-detail-card .hd2 .warn-area {
+    display: flex; }
+    .refund-detail-card .hd2 .warn-area:nth-last-child(1) {
+      margin-bottom: 10px; }
+    .refund-detail-card .hd2 .warn-area .warn-img {
+      width: 73px;
+      height: 17px; }
+    .refund-detail-card .hd2 .warn-area .warn-content {
+      display: flex;
+      margin-left: -5px;
+      padding-left: 15px;
+      border-radius: 0 100px 100px 0;
+      background: rgba(249, 168, 46, 0.14);
+      color: #FF4400; }
+    .refund-detail-card .hd2 .warn-area .warn-item {
+      display: flex;
+      align-items: center;
+      margin-right: 10px; }
+    .refund-detail-card .hd2 .warn-area .warn-item-dot {
+      width: 6px;
+      height: 6px;
+      margin-right: 3px;
+      background: #ff4400;
+      border-radius: 3px; }
+  .refund-detail-card .hd2 .buyer-msg {
+    margin-bottom: 10px; }
+    .refund-detail-card .hd2 .buyer-msg text {
+      margin-left: 5px;
+      color: #FF4400; }
+  .refund-detail-card .card {
+    border-top: 1px solid #ebebeb; }
+    .refund-detail-card .card .card-item1, .refund-detail-card .card .card-item2, .refund-detail-card .card .card-item3, .refund-detail-card .card .card-item4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-right: 1px solid #ebebeb; }
+    .refund-detail-card .card .card-item1 {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+    .refund-detail-card .card .card-item3 {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 9px;
+      font-size: 14px; }
+      .refund-detail-card .card .card-item3 .title {
+        flex-shrink: 0;
+        width: 28px;
+        padding-right: 5px;
+        color: #999999;
+        font-size: 14px; }
+      .refund-detail-card .card .card-item3 .titles {
+        flex-shrink: 0;
+        width: 56px;
+        padding-right: 5px;
+        color: #999999;
+        font-size: 14px; }
+      .refund-detail-card .card .card-item3 .card-item-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 4px; }
+      .refund-detail-card .card .card-item3 .payment-content {
+        display: flex;
+        flex-direction: column; }
+      .refund-detail-card .card .card-item3 .content1, .refund-detail-card .card .card-item3 .num {
+        font-weight: 700;
+        color: #ff4400; }
+      .refund-detail-card .card .card-item3 .content2 {
+        font-size: 12px;
+        line-height: 17px; }
+      .refund-detail-card .card .card-item3 .card-item-profit {
+        font-weight: 700;
+        color: #36AE5E; }
+      .refund-detail-card .card .card-item3 .iconfont-order_mobile {
+        margin-right: 10px;
+        font-size: 16px;
+        color: #2292ff; }
+      .refund-detail-card .card .card-item3 .iconfont-order_creditcard {
+        font-size: 16px;
+        color: #FFC82C; }
+    .refund-detail-card .card .card-item4 {
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      border: unset; }
+      .refund-detail-card .card .card-item4 .card-item4-option {
+        display: flex;
+        flex-direction: column; }
+      .refund-detail-card .card .card-item4 .card-detail {
+        display: flex;
+        align-items: center;
+        color: #1890FF; }
+      .refund-detail-card .card .card-item4 .iconfont-dingdanxiangqing {
+        font-size: 15px;
+        margin-right: 4px; }
+      .refund-detail-card .card .card-item4 .card-waybill > view {
+        margin-bottom: 5px; }
+      .refund-detail-card .card .card-item4 .company {
+        margin-right: 5px; }
+      .refund-detail-card .card .card-item4 .bind {
+        cursor: pointer;
+        color: #1890FF; }
+    .refund-detail-card .card .card-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 24px;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      color: #3386F1;
+      font-size: 12px;
+      border: 1px solid #3386f1;
+      cursor: pointer; }
+  .refund-detail-card .bd-add {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    border-top: 1px solid #ebebeb; }
+    .refund-detail-card .bd-add .add-title {
+      margin-right: 5px;
+      color: #999999; }
+    .refund-detail-card .bd-add .add-content {
+      word-break: break-all; }
+    .refund-detail-card .bd-add .add-check {
+      margin-left: 10px;
+      color: #1890FF; }
+    .refund-detail-card .bd-add .iconfont-fuzhi {
+      margin-left: 5px;
+      color: #979797;
+      font-size: 18px;
+      vertical-align: -3px;
+      cursor: pointer; }
+    .refund-detail-card .bd-add .iconfont-bianji {
+      color: #707070;
+      font-size: 14px; }
+
+.frac {
+  display: flex;
+  align-items: center; }
+
+.label {
+  height: 18px;
+  line-height: 18px;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 2px 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px; }
+
+.label-wait {
+  background-color: #E41010; }
+
+.label-return {
+  background-color: #1890FF; }
+
+.label-confirm {
+  background-color: #1890FF; }
+
+.label-refuse {
+  background-color: #FF8400; }
+
+.label-close {
+  background-color: #C2C2C2; }
+
+.label-success {
+  background-color: #2FC25B; }

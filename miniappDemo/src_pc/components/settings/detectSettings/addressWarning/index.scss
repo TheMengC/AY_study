@@ -1,0 +1,43 @@
+.address-warning {
+    padding: 20px 0;
+    background: rgba(255,255,255,1);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+    .hd {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+    .hd-text {
+        margin-right: 29px;
+    }
+    .guide {
+        padding: 10px 20px;
+        background-color: #FFF5EB;
+        color: #595959;
+        font-size: 14px;
+        margin: 0 20px;
+    }
+
+    .cont {
+        padding: 20px 20px 0 20px;
+
+        .text-area {
+            width: 100%;
+            height:160px;
+            margin-bottom: 20px;
+        }
+    }
+    .bt {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .left {
+        margin-right: 20px;
+    }
+
+}
