@@ -41,7 +41,7 @@
     "@tbmp/mp-cloud-sdk": "^1.0.8",
     "eslint-plugin-jsdoc": "^18.0.1",
     "eslint-plugin-require-jsdoc-except": "^1.3.0",
-    "moment": "^2.0.0",
+    "moment": "^2.29.2",
     "nerv-devtools": "^1.5.4",
     "nervjs": "^1.5.4",
     "redux": "^4.0.0",
